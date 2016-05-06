@@ -26,10 +26,9 @@
   "_release": "1.0.0",
   "_resolution": {
     "type": "version",
-    "tag": "v1.0.0",
-    "commit": "48938155eb24b4ccdde09426066869504c6dab3c"
+    "tag": "v1.0.0"
   },
-  "_source": "https://github.com/Fermoto5HD/FM5strap.git",
+  "_source": "https://github.com/fermoto5hd/fm5strap.git",
   "_target": "v1.0.0",
   "_originalSource": "fm5strap",
   "_direct": true

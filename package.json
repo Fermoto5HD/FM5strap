@@ -9,15 +9,15 @@
     "change-version": "node grunt/change-version.js",
     "test": "grunt test"
   },
-  "style": "dist/css/bootstrap.css",
-  "sass": "scss/bootstrap.scss",
+  "style": "dist/css/FM5strap.css",
+  "sass": "scss/FM5strap.scss",
   "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/twbs/fm5strap.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/twbs/fm5strap/issues"
   },
   "license": "MIT",
   "devDependencies": {
@@ -71,7 +71,7 @@
     "LICENSE"
   ],
   "jspm": {
-    "main": "js/bootstrap",
+    "main": "js/FM5strap",
     "ignore": [
       "dist/js/npm"
     ],
@@ -79,7 +79,7 @@
       "lib": "dist"
     },
     "shim": {
-      "js/bootstrap": {
+      "js/FM5strap": {
         "deps": [
           "jquery"
         ],
