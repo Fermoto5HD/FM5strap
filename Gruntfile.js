@@ -415,19 +415,13 @@ module.exports = function (grunt) {
         commit: true,
         push: true,
         message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-      },
-      pages: {
-        options: {
-          remote: 'git@github.com:twbs/derpstrap.git',
-          branch: 'gh-pages'
-        }
       }
     },
 
     compress: {
       main: {
         options: {
-          archive: 'FM5strap-<%= pkg.version %>-dist.zip',
+          archive: 'fm5strap-<%= pkg.version %>-dist.zip',
           mode: 'zip',
           level: 9,
           pretty: true
@@ -437,7 +431,7 @@ module.exports = function (grunt) {
             expand: true,
             cwd: 'dist/',
             src: ['**'],
-            dest: 'FM5strap-<%= pkg.version %>-dist'
+            dest: 'fm5strap-<%= pkg.version %>-dist'
           }
         ]
       }
