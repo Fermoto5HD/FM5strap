@@ -6,8 +6,8 @@
   "license": "MIT",
   "moduleType": "globals",
   "main": [
-    "dist/css/FM5strap.min.css",
-    "dist/js/FM5strap.min.js"
+    "dist/css/fm5strap.min.css",
+    "dist/js/fm5strap.min.js"
   ],
   "ignore": [
     "/.*",
