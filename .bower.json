@@ -10,7 +10,6 @@
     "dist/js/FM5strap.min.js"
   ],
   "ignore": [
-    "/.*",
     "_config.yml",
     "CNAME",
     "composer.json",
