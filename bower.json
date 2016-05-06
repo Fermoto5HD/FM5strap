@@ -1,0 +1,25 @@
+{
+  "name": "fm5strap",
+  "description": "Framework basado en Bootstrap v4 para mis sitios personales.",
+  "keywords": "fm5strap",
+  "homepage": "http://Fermoto5HD.16mb.com",
+  "license": "MIT",
+  "moduleType": "globals",
+  "main": [
+    "dist/css/FM5strap.min.css",
+    "dist/js/FM5strap.min.js"
+  ],
+  "ignore": [
+    "/.*",
+    "_config.yml",
+    "CNAME",
+    "composer.json",
+    "CONTRIBUTING.md",
+    "docs",
+    "js/tests",
+    "test-infra"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1 - 2"
+  }
+}
