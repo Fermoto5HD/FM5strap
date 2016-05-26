@@ -25,6 +25,10 @@
 @import "forms";
 @import "buttons";
 
+// Structure 
+@import "main";
+@import "footer";
+
 // Components
 @import "animation";
 @import "dropdown";
@@ -37,6 +41,7 @@
 @import "breadcrumb";
 @import "pagination";
 @import "pager";
+@import "shortcuts";
 @import "labels";
 @import "jumbotron";
 @import "alert";

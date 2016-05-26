@@ -1,4 +1,9 @@
-.breadcrumb-container{background-color: $breadcrumb-bg-jumbotron;} 
+.breadcrumb-container{
+  background-color: $breadcrumb-bg-jumbotron;
+  .content-w-fixed-navbar .jumbotron-container &:first-child {
+    padding-top: 50px; 
+  }
+} 
 .breadcrumb {
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
   margin-bottom: $spacer-y;
@@ -11,6 +16,8 @@
 
   > li {
     float: left;
+
+    & a {color: $breadcrumb-color;}
 
     + li::before {
       padding-right: .5rem;

@@ -36,6 +36,11 @@
   right: 0;
   left: 0;
   z-index: $zindex-navbar-fixed;
+  transition: 0.5s; 
+  &.onscroll{
+    background-image: none; 
+    background-color: rgb(40, 40, 40); 
+  }
 
   // Undo the rounded corners
   @include media-breakpoint-up(sm) {
@@ -44,10 +49,14 @@
 }
 
 .navbar-fixed-top {
+  background-color: transparent; 
+  @include gradient-vertical(black, transparent, 0%, 100%);
   top: 0;
 }
 
 .navbar-fixed-bottom {
+  background-color: transparent; 
+  @include gradient-vertical(transparent, black, 0%, 100%);
   bottom: 0;
 }
 
@@ -72,8 +81,11 @@
   width: 175px; 
   height: 45px; 
   padding: 0px; 
-  background-size: cover; 
-  background-position: center;
+  background:{
+    image: url(../img/brand.svg);
+    size: cover; 
+    position: center;
+  }
   float: left;
   padding-top:    .25rem;
   padding-bottom: .25rem;

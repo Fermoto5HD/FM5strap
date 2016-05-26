@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="FM5strap es un framework basado en Bootstrap v4 que fue armado para usar en sitios web de mi autoría">
+<meta name="keywords" content="Fermoto5HD, FM5strap, Bootstrap">
+<meta name="author" content="Fernando Osorio (Fermoto5HD)">
+
+<title>
+  {% if page.layout == "home" %}
+    {{ page.title }}
+  {% else %}
+    {{ page.title }} | FM5strap
+  {% endif %}
+</title>
+
+<!-- Bootstrap core CSS -->
+{% if site.github %}
+  <link href="{{ site.baseurl }}/dist/css/fm5strap.min.css" rel="stylesheet">
+{% else %}
+  <link href="{{ site.baseurl }}/dist/css/fm5strap.css" rel="stylesheet">
+{% endif %}
+
+<!-- Documentation extras -->
+<link href="{{ site.baseurl }}/assets/css/docs.min.css" rel="stylesheet">
+
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular" type="text/css"/>
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="{{ site.baseurl }}/images/apple-touch-icon.png">
+<link rel="icon" href="{{ site.baseurl }}/images/favicon.ico">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-146052-10', 'getbootstrap.com');
+  ga('send', 'pageview');
+</script>

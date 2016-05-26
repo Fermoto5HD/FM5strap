@@ -1,0 +1,4 @@
+/* Show it's not fixed to the top */
+body {padding-top: 6rem}
+main {min-height: 75rem}
+.menu-collapsed{background-color: rgb(20, 20, 20)}

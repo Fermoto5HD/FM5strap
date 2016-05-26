@@ -1,0 +1,261 @@
+---
+layout: docs
+title: Browsers y dispositivos
+group: comenzar
+---
+
+FM5strap soporta una gran variedad de browsers modernos y dispositivos, junto con algunos más viejos. Mirá cuales son los que son soportados, cómo hacerlos soportar en caso de no tener soporte y los errores conocidos en casos específicos..
+
+## Contenidos
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+## Browsers soportados
+
+FM5strap soporta las **últimas versiones estables** de la mayoría de los browsers y plataformas. En Windows **soporta Internet Explorer 9, 10 y 11, y Microsoft Edge**. Abajo hay más información específica del soporte de este framework. 
+
+### Mobile
+
+FM5strap soporta las últimas versiones de los browsers más utilizados en celulares. 
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <td></td>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>Opera</th>
+        <th>Safari</th>
+        <th>Android Browser &amp; WebView</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Android</th>
+        <td class="text-success">Soportado</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-danger">No soportado</td>
+        <td class="text-muted">Desconocido</td>
+        <td class="text-success">Android v5.0+</td>
+      </tr>
+      <tr>
+        <th scope="row">iOS</th>
+        <td class="text-success">Soportado</td>
+        <td class="text-muted">Desconocido</td>
+        <td class="text-danger">No soportado</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-muted">Desconocido</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+### Escritorio
+
+Situación similar, las últimas versiónes de los browser de escritorio están soportados. 
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <td></td>
+        <th>Chrome</th>
+        <th>Firefox</th>
+        <th>Internet Explorer</th>
+        <th>Microsoft Edge</th>
+        <th>Opera</th>
+        <th>Safari</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Mac</th>
+        <td class="text-success">Soportado</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-muted">Desconocido</td>
+        <td class="text-muted">Desconocido</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-success">Soportado</td>
+      </tr>
+      <tr>
+        <th scope="row">Windows</th>
+        <td class="text-success">Soportado</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-success">Soportado</td>
+        <td class="text-danger">No soportado</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+Para Firefox, aparte del soporte en las últimas versiones estables, también soporta la última [Versión de Soporte Extendido (ESR)](https://www.mozilla.org/en-US/firefox/organizations/faq/) de Firefox.
+
+Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 8 and below, though they are not officially supported.
+
+For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs]({{ site.baseurl }}/browser-bugs/).
+
+## Internet Explorer 9
+
+Internet Explorer 9 está apenas soportado, igualmente fijate que hay algunas propiedades CSS3 y elementos HTML5 que no los soporta del todo.
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Propiedad</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius"><code>border-radius</code></a></th>
+        <td class="text-success">Soportado</td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow"><code>box-shadow</code></a></th>
+        <td class="text-success">Soportado</td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform"><code>transform</code></a></th>
+        <td class="text-success">Soportado, con el prefijo <code>-ms</code></td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition"><code>transition</code></a></th>
+        <td class="text-danger">No soportado</td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input#attr-placeholder"><code>placeholder</code></a></th>
+        <td class="text-danger">No soportado</td>
+      </tr>
+      <tr>
+        <th scope="row"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">Flexbox</a></th>
+        <td class="text-danger">No soportado</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+Entrá en [Can I use...](http://caniuse.com/) para más detalles de qué funciones anda y cuales no anda en el browser.
+
+## Soporte Internet Explorer 8
+
+Bootstrap v4 no soporta más IE8, por lo tanto FM5strap tampoco lo soporta. **Si necesitás usar esa asquerosa versión del infierno podés usar Bootstrap v3** el cual seguirá siendo soportado por un tiempo más pero no se agregará nada nuevo. 
+
+Aunque, podés agregar un poco de scripts extra para que FM5strap sea soportado por IE8. Vas a necesitar esto:
+
+* [The HTML5 shiv](https://en.wikipedia.org/wiki/HTML5_Shiv)
+* [Respond.js](https://github.com/scottjehl/Respond)
+* [Rem unit polyfill](https://github.com/chuckcarpenter/REM-unit-polyfill)
+
+No habrá soporte para esto, aunque podés obtener un poco de ayuda de la comunidad en [el canal de Slack de Bootstrap]({{ site.slack }}).
+
+**Aunque... no te parece mejor presionar al usuario a que cambie ese horrendo navegador?**
+
+## Modos de compatibilidad de IE
+
+Por supuesto, FM5strap no soporta los modos de compatibilidad anteriores de Internet Explorer. Por las dudas, fijate de estar usando el renderizador más reciente para IE, y considerá el uso de la etiqueta `<meta>` en el código: 
+
+{% highlight html %}
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% endhighlight %}
+
+Confirm the document mode by opening the debugging tools: press <kbd>F12</kbd> and check the "Document Mode".
+
+This tag is included in all of Bootstrap's documentation and examples to ensure the best rendering possible in each supported version of Internet Explorer.
+
+See [this StackOverflow question](https://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge) for more information.
+
+## Internet Explorer 10 en Windows Phone 8
+
+Internet Explorer 10 en Windows Phone 8 con versiones anteriores a la [Update 3 (a.k.a. GDR3)](http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx) doesn't differentiate **device width** from **viewport width** in `@-ms-viewport` at-rules, and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, you'll need to **include the following JavaScript to work around the bug**.
+
+{% highlight js %}
+// Copyright 2014-2015 Twitter, Inc.
+// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+  var msViewportStyle = document.createElement('style')
+  msViewportStyle.appendChild(
+    document.createTextNode(
+      '@-ms-viewport{width:auto!important}'
+    )
+  )
+  document.head.appendChild(msViewportStyle)
+}
+{% endhighlight %}
+
+Para más información y lineamientos de uso, leé [Windows Phone 8 y Device-Width (en inglés)](http://timkadlec.com/2013/01/windows-phone-8-and-device-width/).
+
+As a heads up, we include this in all of Bootstrap's documentation and examples as a demonstration.
+
+## Modals, navbars, y teclados virtuales
+
+### Overflow and scrolling
+
+Support for `overflow: hidden;` on the `<body>` element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices' browsers, the `<body>` content will begin to scroll.
+
+### Virtual keyboards
+
+Also, note that if you're using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn't update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to `position: absolute;` or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.
+
+### Navbar Dropdowns
+
+The `.dropdown-backdrop` element isn't used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or [any other element which will fire a click event in iOS](https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile)).
+
+## Browser zooming
+
+Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds.
+
+## Sticky `:hover`/`:focus` on mobile
+Even though real hovering isn't possible on most touchscreens, most mobile browsers emulate hovering support and make `:hover` "sticky". In other words, `:hover` styles start applying after tapping an element and only stop applying after the user taps some other element. On mobile-first sites, this behavior is normally undesirable.
+
+Bootstrap includes a workaround for this, although it is disabled by default. By setting `$enable-hover-media-query` to `true` when compiling from Sass, Bootstrap will use [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) to disable `:hover` styles in browsers that emulate hovering, thus preventing sticky `:hover` styles. There are some caveats to this workaround; see the shim's documentation for details.
+
+## Printing
+
+Even in some modern browsers, printing can be quirky.
+
+In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. [See #12078 for some details.](https://github.com/twbs/bootstrap/issues/12078) Suggested workarounds:
+
+Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:
+
+{% highlight css %}
+@media print {
+  .container {
+    width: auto;
+  }
+}
+{% endhighlight %}
+
+## Android stock browser
+
+Out of the box, Android 4.1 (and even some newer releases apparently) ship with the Browser app as the default web browser of choice (as opposed to Chrome). Unfortunately, the Browser app has lots of bugs and inconsistencies with CSS in general.
+
+#### Select menu
+
+On `<select>` elements, the Android stock browser will not display the side controls if there is a `border-radius` and/or `border` applied. (See [this StackOverflow question](https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with) for details.) Use the snippet of code below to remove the offending CSS and render the `<select>` as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.
+
+{% highlight html %}
+<script>
+$(function () {
+  var nua = navigator.userAgent
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+  if (isAndroid) {
+    $('select.form-control').removeClass('form-control').css('width', '100%')
+  }
+})
+</script>
+{% endhighlight %}
+
+Want to see an example? [Check out this JS Bin demo.](http://jsbin.com/OyaqoDO/2)
+
+## Validators
+
+In order to provide the best possible experience to old and buggy browsers, Bootstrap uses [CSS browser hacks](http://browserhacks.com) in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.
+
+These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.
+
+Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for [a certain Firefox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=654072).

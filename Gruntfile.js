@@ -68,11 +68,11 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*\n' +
-            '   FM5strap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            '   <%= grunt.template.today("yyyy") %> - Armado por <%= pkg.author %>\n' +
-            '   Basado en Bootstrap v4.0.0-alpha.2 - Copyright 2011-<%= grunt.template.today("yyyy") %> Twitter, Inc.\n' +
-            '   Bootstrap está licenciado bajo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)' +
-            '   FM5strap esta liceniado bajo CC-BY-4.0 (https://github.com/Fermoto5HD/FM5strap/LICENSE)' +
+            ' * FM5strap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * <%= grunt.template.today("yyyy") %> - Armado por <%= pkg.author %>\n' +
+            ' * Basado en Bootstrap v4.0.0-alpha.2 - Copyright 2011-<%= grunt.template.today("yyyy") %> Twitter, Inc.\n' +
+            ' * Bootstrap está licenciado bajo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n' +
+            ' * FM5strap esta liceniado bajo MIT (https://github.com/Fermoto5HD/FM5strap/LICENSE)\n' +
             '*/\n',
     jqueryCheck: 'if (typeof jQuery === \'undefined\') {\n' +
                  '  throw new Error(\'El JavaScript de FM5strap necesita jQuery para funcionar correctamente.\')\n' +
@@ -335,6 +335,14 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      }, 
+      img: {
+        expand: true,
+        cwd: 'img/',
+        src: [
+          '**/*'
+        ],
+        dest: 'dist/img/'
       }
     },
 
@@ -496,11 +504,11 @@ module.exports = function (grunt) {
   })(process.env.TWBS_SASS || 'libsass');
   // grunt.registerTask('sass-compile', ['sass:core', 'sass:extras', 'sass:docs']);
   grunt.registerTask('sass-compile', ['sass:core', 'sass:docs']);
-
+  grunt.registerTask('dist-img', ['copy:img']);
   grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-img', 'dist-js']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'test']);

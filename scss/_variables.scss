@@ -85,8 +85,16 @@ $border-width:               1px !default;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    rgb(40, 40, 40) !default;
+$body-bg:                    rgb(20, 20, 20) !default;
 $body-color:                 rgb(225, 225, 225) !default;
+
+
+// Main content
+//
+// Settings for the `<main>` element.
+
+$main-bg:                    rgb(40, 40, 40) !default;
+$main-color:                 rgb(225, 225, 225) !default;
 
 
 // Links
@@ -252,20 +260,20 @@ $btn-secondary-bg:               rgb(20, 20, 20) !default;
 $btn-secondary-border:           $gray-dark !default;
 
 $btn-info-color:                 #fff !default;
-$btn-info-bg:                    $brand-info !default;
-$btn-info-border:                $btn-info-bg !default;
+$btn-info-bg:                    rgb(20, 20, 20) !default;
+$btn-info-border:                $brand-info !default;
 
 $btn-success-color:              #fff !default;
-$btn-success-bg:                 $brand-success !default;
-$btn-success-border:             $btn-success-bg !default;
+$btn-success-bg:                 rgb(20, 20, 20) !default;
+$btn-success-border:             $brand-success !default;
 
 $btn-warning-color:              #fff !default;
-$btn-warning-bg:                 $brand-warning !default;
-$btn-warning-border:             $btn-warning-bg !default;
+$btn-warning-bg:                 rgb(20, 20, 20) !default;
+$btn-warning-border:             $brand-warning !default;
 
 $btn-danger-color:               #fff !default;
-$btn-danger-bg:                  $brand-danger !default;
-$btn-danger-border:              $btn-danger-bg !default;
+$btn-danger-bg:                  rgb(20, 20, 20) !default;
+$btn-danger-border:              $brand-danger !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
@@ -286,11 +294,11 @@ $btn-border-radius-sm:           $border-radius-sm !default;
 $input-padding-x:                .75rem !default;
 $input-padding-y:                .375rem !default;
 
-$input-bg:                       #fff !default;
-$input-bg-disabled:              $gray-lighter !default;
+$input-bg:                       rgba(0, 0, 0, 0.5) !default;
+$input-bg-disabled:              rgba(0, 0, 0, 0.25) !default;
 
-$input-color:                    $gray !default;
-$input-border-color:             #ccc !default;
+$input-color:                    #FFF !default;
+$input-border-color:             rgba(255, 255, 255, 0.75) !default;
 $input-btn-border-width:         $border-width !default; // For form controls and buttons
 $input-box-shadow:               inset 0 1px 1px rgba(0,0,0,.075) !default;
 
@@ -373,10 +381,10 @@ $navbar-dark-hover-color:           rgba(255,255,255,.75) !default;
 $navbar-dark-active-color:          rgba(255,255,255,1) !default;
 $navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
 
-$navbar-light-color:                rgba(0,0,0,.3) !default;
-$navbar-light-hover-color:          rgba(0,0,0,.6) !default;
-$navbar-light-active-color:         rgba(0,0,0,.8) !default;
-$navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
+$navbar-light-color:                rgba(255,255,255,.3) !default;
+$navbar-light-hover-color:          rgba(255,255,255,.6) !default;
+$navbar-light-active-color:         rgba(255,255,255,.8) !default;
+$navbar-light-disabled-color:       rgba(255,255,255,.15) !default;
 
 
 // Navs
@@ -558,21 +566,21 @@ $alert-border-radius:         $border-radius !default;
 $alert-link-font-weight:      bold !default;
 $alert-border-width:          $border-width !default;
 
-$alert-success-bg:            $state-success-bg !default;
-$alert-success-text:          $state-success-text !default;
-$alert-success-border:        $state-success-border !default;
+$alert-success-bg:            rgba(20, 20, 20, 0.5) !default;
+$alert-success-text:          $state-success-bg !default;
+$alert-success-border:        $state-success-bg !default;
 
-$alert-info-bg:               $state-info-bg !default;
-$alert-info-text:             $state-info-text !default;
-$alert-info-border:           $state-info-border !default;
+$alert-info-bg:               rgba(20, 20, 20, 0.5) !default;
+$alert-info-text:             $state-info-bg !default;
+$alert-info-border:           $state-info-bg !default;
 
-$alert-warning-bg:            $state-warning-bg !default;
-$alert-warning-text:          $state-warning-text !default;
-$alert-warning-border:        $state-warning-border !default;
+$alert-warning-bg:            rgba(20, 20, 20, 0.5) !default;
+$alert-warning-text:          rgb(225, 225, 75) !default;
+$alert-warning-border:        rgb(225, 225, 75) !default;
 
-$alert-danger-bg:             $state-danger-bg !default;
-$alert-danger-text:           $state-danger-text !default;
-$alert-danger-border:         $state-danger-border !default;
+$alert-danger-bg:             rgba(20, 20, 20, 0.5) !default;
+$alert-danger-text:           rgb(225, 150, 75) !default;
+$alert-danger-border:         rgb(225, 150, 75) !default;
 
 
 // Progress bars
@@ -626,9 +634,10 @@ $breadcrumb-padding-horizontal: 1rem !default;
 
 $breadcrumb-bg:                 $gray-lighter !default;
 $breadcrumb-bg-jumbotron:       rgba(0, 0, 0, 0.75) !default;
+$breadcrumb-color:       $gray-light !default;
 $breadcrumb-divider-color:      $gray-light !default;
-$breadcrumb-active-color:       $gray-light !default;
-$breadcrumb-divider:            "/" !default;
+$breadcrumb-active-color:       #FFF !default;
+$breadcrumb-divider:            "›" !default;
 
 
 // Carousel

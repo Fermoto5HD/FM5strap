@@ -1,6 +1,20 @@
+.jumbotron-container {
+  border-radius: 0px; 
+  background: {
+    color: rgb(20, 20, 20); 
+    attachment: fixed;
+    position: center; 
+    size: cover;
+  }
+}
 .jumbotron {
   padding: $jumbotron-padding ($jumbotron-padding / 2);
-  margin-bottom: $jumbotron-padding;
+  .content-w-fixed-navbar & {
+    padding-top: 100px; 
+    &.w-breadcrumb {
+      padding: $jumbotron-padding ($jumbotron-padding / 2);
+    }
+  }
   border-radius: 0px; 
   background: {
     color: $jumbotron-bg;
@@ -8,11 +22,13 @@
     position: center; 
     size: cover;
   }
-  @include border-radius($border-radius-lg);
+  .jumbotron-container & {background-color: rgba(0, 0, 0, 0.5)}
+  @include border-radius(0);
 
   @include media-breakpoint-up(sm) {
     padding: ($jumbotron-padding * 2) $jumbotron-padding;
   }
+  & .alert{opacity: 0.75; &:hover{opacity: 1}}
 }
 
 .jumbotron-hr {
