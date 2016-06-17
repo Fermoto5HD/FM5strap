@@ -34,7 +34,7 @@
             {% endif %}
 
             <li class="{{ active }}">
-              <a href="{{ site.baseurl }}/{{ group.title | downcase | replace: ' ', '-' }}/{{ doc.title | downcase | replace: ' ', '-' | replace:'-&-','-' | replace:'ó','o' | replace:'í','i' }}">
+              <a href="{{ site.baseurl }}/{{ group.title | downcase | replace: ' ', '-' }}/{{ doc.title | downcase | replace: ' ', '-' | replace:'-&-','-' | replace:'á','a' | replace:'é','e'  | replace:'í','i' | replace:'ó','o' | replace:'ú','u' | replace:'¿','' | replace:'?','' }}">
                 {{ doc.title }}
               </a>
 

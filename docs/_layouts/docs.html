@@ -12,58 +12,60 @@
 
     {% include nav-home.html %}
 
-    <div class="bd-pageheader">
-      <div class="jumbotron-container" style="background-image: url({{ site.baseurl }}/images/jumbotron.jpg);">
-        <div class="breadcrumb-container">
-          <div class="container">
-            <ol class="breadcrumb">
-              <li><a href="/">FM5strap</a></li>
-              <li>{% if page.layout == "home" %}
-                  Inicio
-                {% elsif page.group == "comenzar" %}
-                  Comenzar
-                {% elsif page.group == "layout" %}
-                  Estructura
-                {% elsif page.group == "contenido" %}
-                  Contenido
-                {% elsif page.group == "components" %}
-                  Componentes
-                {% elsif page.group == "javascript" %}
-                  Javascript
-                {% elsif page.group == "about" %}
-                  Acerca de...
-                {% elsif page.group == "migration" %}
-                  Migración
-                {% elsif page.group == "browser-bugs" %}
-                  Errores de browsers
-                {% endif %}
-              </li>
-              <li class="active">{{ page.title }}</li>
-            </ol>
+    <main class="content-w-fixed-navbar">
+      <div class="bd-pageheader">
+        <div class="jumbotron-container" style="background-image: url({{ site.baseurl }}/images/jumbotron.jpg);">
+          <div class="breadcrumb-container">
+            <div class="container">
+              <ol class="breadcrumb">
+                <li><a href="/">FM5strap</a></li>
+                <li>{% if page.layout == "home" %}
+                    Inicio
+                  {% elsif page.group == "comenzar" %}
+                    Comenzar
+                  {% elsif page.group == "layout" %}
+                    Estructura
+                  {% elsif page.group == "contenido" %}
+                    Contenido
+                  {% elsif page.group == "componentes" %}
+                    Componentes
+                  {% elsif page.group == "javascript" %}
+                    Javascript
+                  {% elsif page.group == "acerca-de" %}
+                    Acerca de...
+                  {% elsif page.group == "migration" %}
+                    Migración
+                  {% elsif page.group == "browser-bugs" %}
+                    Errores de browsers
+                  {% endif %}
+                </li>
+                <li class="active">{{ page.title }}</li>
+              </ol>
+            </div>
+          </div>
+          <div class="jumbotron">
+            <div class="container">
+              {% include page-headers.html %}
+            </div>
           </div>
         </div>
-        <div class="jumbotron">
-          <div class="container">
-            {% include page-headers.html %}
-          </div>
+        <div class="container">
+          {% include ads.html %}
         </div>
       </div>
-      <div class="container">
-        {% include ads.html %}
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-md-push-9 bd-sidebar">
-          {% include nav-docs.html %}
-        </div>
-        <div class="col-md-9 col-md-pull-3 bd-content">
-          <h1 class="bd-title" id="content">{{ page.title }}</h1>
-          {{ content }}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-md-push-9 bd-sidebar">
+            {% include nav-docs.html %}
+          </div>
+          <div class="col-md-9 col-md-pull-3 bd-content">
+            <h1 class="bd-title" id="content">{{ page.title }}</h1>
+            {{ content }}
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
     {% include footer.html %}
   </body>

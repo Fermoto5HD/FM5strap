@@ -4,7 +4,7 @@ title: Tipografia
 group: contenido
 ---
 
-FM5strap usa **Open Sans** como tipografía principal del framework y la misma es de código abierto. Actualmente estoy estudiando en cambiarla a **Gidole**, también de código abierto. 
+FM5strap usa **Gidole** como tipografía principal del framework y la misma es de código abierto. En caso de no poder usar Gidole se puede tomar a **Open Sans**, la fuente secundaria del framework también de código abierto. 
 Este framework, al igual que Bootstrap, incluye lineamientos determinados para armar encabezados, párrafos, listas y más. Para personalizarlo aún más leé las [clases útiles para textos]({{ site.baseurl }}/components/utilities/).
 
 ## Contenidos

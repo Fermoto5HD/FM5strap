@@ -24,7 +24,7 @@
     - title: Tablas
     - title: Figuras
 
-- title: Components
+- title: Componentes
   pages:
     - title: Buttons
     - title: Button group
@@ -56,13 +56,9 @@
 #     - title: Approach
 #     - title: Icon fonts
 
-- title: About
+- title: Acerca de
   pages:
-    - title: History
-    - title: Team
-    - title: Accesibilidad
-    - title: Brand
-    - title: License
-    - title: Translations
+    - title: ¿Por qué FM5trap?
+    - title: Lineamientos visuales
 
 - title: Migration

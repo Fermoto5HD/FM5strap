@@ -1,5 +1,5 @@
 /*
-    Gruntfile de FM5strap v1
+    Gruntfile de FM5strap v1.1
     Basado en Bootstrap v4.0.0-alpha.2
     Bootstrap está licenciado bajo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
     FM5strap esta liceniado bajo CC-BY-4.0 (https://github.com/Fermoto5HD/FM5strap/LICENSE)
@@ -75,7 +75,7 @@ module.exports = function (grunt) {
             ' * FM5strap esta liceniado bajo MIT (https://github.com/Fermoto5HD/FM5strap/LICENSE)\n' +
             '*/\n',
     jqueryCheck: 'if (typeof jQuery === \'undefined\') {\n' +
-                 '  throw new Error(\'El JavaScript de FM5strap necesita jQuery para funcionar correctamente.\')\n' +
+                 '  throw new Error(\'El JavaScript de FM5strap necesita jQuery para funcionar correctamente. Usá una versión que no sea superior a la v3.0.0. \')\n' +
                  '}\n',
     jqueryVersionCheck: '+function ($) {\n' +
                         '  var version = $.fn.jquery.split(\' \')[0].split(\'.\')\n' +
@@ -226,7 +226,7 @@ module.exports = function (grunt) {
       },
       docsJs: {
         src: configBridge.paths.docsJs,
-        dest: 'docs/assets/js/docs.min.js'
+        dest: 'docs/assets/js/dist/docs.min.js'
       }
     },
 
@@ -264,7 +264,7 @@ module.exports = function (grunt) {
             autoprefixer
           ]
         },
-        src: 'docs/assets/css/docs.min.css'
+        src: 'docs/assets/css/dist/docs.min.css'
       },
       examples: {
         options: {
@@ -300,8 +300,8 @@ module.exports = function (grunt) {
         ]
       },
       docs: {
-        src: 'docs/assets/css/docs.min.css',
-        dest: 'docs/assets/css/docs.min.css'
+        src: 'docs/assets/css/src/docs.css',
+        dest: 'docs/assets/css/dist/docs.min.css'
       }
     },
 
@@ -323,7 +323,7 @@ module.exports = function (grunt) {
       },
       docs: {
         src: 'docs/assets/css/src/docs.css',
-        dest: 'docs/assets/css/src/docs.css'
+        dest: 'docs/assets/css/dist/docs.css'
       }
     },
 

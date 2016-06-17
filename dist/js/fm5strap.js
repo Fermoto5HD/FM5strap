@@ -7,7 +7,7 @@
 */
 
 if (typeof jQuery === 'undefined') {
-  throw new Error('El JavaScript de FM5strap necesita jQuery para funcionar correctamente.')
+  throw new Error('El JavaScript de FM5strap necesita jQuery para funcionar correctamente. Usá una versión que no sea superior a la v3.0.0. ')
 }
 
 +function ($) {

@@ -1,29 +1,29 @@
 ---
 layout: default
 ---
-
-<div class="bd-pageheader text-xs-center text-sm-left">
-	<div class="jumbotron-container" style="background-image: url({{ site.baseurl }}/images/jumbotron.jpg);">
-		<div class="breadcrumb-container">
-			<div class="container">
-				<ol class="breadcrumb">
-					<li><a href="/">FM5strap</a></li>
-					<li class="active">{{ page.title }}</li>
-				</ol>
+<main class="content-w-fixed-navbar">
+	<div class="bd-pageheader text-xs-center text-sm-left">
+		<div class="jumbotron-container" style="background-image: url({{ site.baseurl }}/images/jumbotron.jpg);">
+			<div class="breadcrumb-container">
+				<div class="container">
+					<ol class="breadcrumb">
+						<li><a href="/">FM5strap</a></li>
+						<li class="active">{{ page.title }}</li>
+					</ol>
+				</div>
 			</div>
-		</div>
-		<div class="jumbotron">
-			<div class="container">
-				<h1>{{ page.title }}</h1>
-				<p class="lead">
-					Podés comenzar rápidamente a prototipar usando como base alguno de estos ejemplos, podés usar una parte como también la plantilla completa. 
-				</p>
-				{% include ads.html %}
+			<div class="jumbotron">
+				<div class="container">
+					<h1>{{ page.title }}</h1>
+					<p class="lead">
+						Podés comenzar rápidamente a prototipar usando como base alguno de estos ejemplos, podés usar una parte como también la plantilla completa. 
+					</p>
+					{% include ads.html %}
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-<div class="container bd-content">
-	{{ content }}
-</div>
+	<div class="container bd-content">
+		{{ content }}
+	</div>
+</main>

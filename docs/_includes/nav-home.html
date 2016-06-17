@@ -1,4 +1,4 @@
-<header class="navbar navbar-light navbar-static-top bd-navbar" role="banner">
+<header class="navbar navbar-light navbar-fixed-top bd-navbar" role="banner">
     {% comment %}
   <nav class="nav navbar-nav pull-xs-right">
     <div class="nav-item dropdown">
@@ -17,10 +17,10 @@
       <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
         &#9776;
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/" style="background-image: url({{ site.baseurl }}/images/brand.svg)"></a>
+      <a class="navbar-brand" href="{{ site.baseurl }}/"></a>
       <nav class="nav navbar-nav pull-xs-right">
         <a class="nav-item nav-link {% if page.layout == "docs" %}active{% endif %}" href="{{ site.baseurl }}/comenzar/introduccion/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentación</a>
-        <a class="nav-item nav-link {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/ejemplos/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Ejemplos');">Ejemplos</a>
+        <a class="nav-item nav-link {% if page.title == "Ejemplos" %}active{% endif %}" href="{{ site.baseurl }}/ejemplos/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Ejemplos');">Ejemplos</a>
         <a class="nav-item nav-link" href="{{ site.bootstrap }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">Bootstrap v4</a>
       </nav>
     </div>

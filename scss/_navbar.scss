@@ -36,10 +36,12 @@
   right: 0;
   left: 0;
   z-index: $zindex-navbar-fixed;
+  box-shadow: 0px 0px 0px transparent;
   transition: 0.5s; 
   &.onscroll{
     background-image: none; 
     background-color: rgb(40, 40, 40); 
+    box-shadow: 0px 0px 6px #000;
   }
 
   // Undo the rounded corners
@@ -244,5 +246,12 @@
 
   .navbar-divider {
     background-color: rgba(255,255,255,.075);
+  }
+}
+
+.jumbotron, .jumbotron-container{
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5); 
+    @include border-radius($btn-border-radius);
   }
 }

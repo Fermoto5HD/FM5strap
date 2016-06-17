@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no" />
+		<!-- If you're going to develop a webapp for mobile, please consider using a manifest.json to make a splashscreen. -->
+		<!--<link rel=manifest href="manifest.json">-->
+		<!-- Chrome for Android theme color -->
+		<meta name="theme-color" content="#282828" />
+		<!-- Tile color for Win8 -->
+		<meta name="msapplication-TileColor" content="#282828">
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="no">
+		<meta name="application-name" content="Fermoto5HD">
+		<link rel="icon" sizes="192x192" href="../../dist/img/touch/chrome-touch-icon-192x192.png">
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Fermoto5HD">
+		<link rel="apple-touch-icon" href="../../dist/img/touch/apple-touch-icon.png">
+		<!-- Tile icon for Win8 (144x144) -->
+		<meta name="msapplication-TileImage" content="../../dist/img/touch/ms-touch-icon-144x144-precomposed.png">
+
+		<meta name="description" content="">
+		<meta name="keywords" content="" />
+		<meta name="author" content="" />
+		<meta name="thumbnail" content="" />
+		<!-- Meta og -->
+		<meta property="og:description" content="">
+		<meta property="og:site_name" content="" />
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:locale" content="es_AR" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:type" content="website" />
+		<!-- Meta Twitter -->
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:card" content="photo" />
+		<meta name="twitter:site" content="@Fermoto5HD" />
+		<meta name="twitter:creator" content="@Fermoto5HD" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:image" content="" />
+		<meta name="twitter:image:width" content="" />
+		<meta name="twitter:image:height" content="" />
+
+		<title>Sistema de grillas | FM5strap</title>
+
+		<!-- FM5strap core CSS -->
+		<link href="../../dist/css/fm5strap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<link href="grillas.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<nav class="navbar">
+				<div class="container">
+					<a class="navbar-brand" href="#"></a>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="jumbotron-container">
+				<div class="jumbotron text-xs-center">
+					<div class="container">
+						<h1>Sistema de grillas: Algunos ejemplos</h1>
+						<p class="lead">Algunos pedazos de código mostrando algunas formas de diagramar la grilla, para que te vayas acostumbrando al sistema de grilla impuesto por Bootstrap. Si venías utilizando Bootstrap no será necesario que te leas toda esta página. :P</p>
+					</div>
+				</div>
+			</section>
+	    <div class="container">
+				<h3>5 ternas</h3>
+				<p>Hay 5 filas de tres columnas, cada fila representa el rango de dispositivos que soporta. Cada terna comienza con un soporte mínimo y se va adaptando sólo con los dispositivos con pantallas más grandes... claro, hasta que aparezca otra clase que altere su disposición.</p>
+
+<div class="row">
+	<div class="col-xs-4">.col-xs-4</div>
+	<div class="col-xs-4">.col-xs-4</div>
+	<div class="col-xs-4">.col-xs-4</div>
+</div>
+
+<div class="row">
+	<div class="col-sm-4">.col-sm-4</div>
+	<div class="col-sm-4">.col-sm-4</div>
+	<div class="col-sm-4">.col-sm-4</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4">.col-md-4</div>
+	<div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="row">
+	<div class="col-lg-4">.col-lg-4</div>
+	<div class="col-lg-4">.col-lg-4</div>
+	<div class="col-lg-4">.col-lg-4</div>
+</div>
+
+<div class="row">
+	<div class="col-xl-4">.col-xl-4</div>
+	<div class="col-xl-4">.col-xl-4</div>
+	<div class="col-xl-4">.col-xl-4</div>
+</div>
+
+				<h3>3 columnas iguales</h3>
+				<p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+				<div class="row">
+					<div class="col-md-4">.col-md-4</div>
+					<div class="col-md-4">.col-md-4</div>
+					<div class="col-md-4">.col-md-4</div>
+				</div>
+
+				<h3>3 columnas... que no son iguales</h3>
+				<p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+				<div class="row">
+					<div class="col-md-3">.col-md-3</div>
+					<div class="col-md-6">.col-md-6</div>
+					<div class="col-md-3">.col-md-3</div>
+				</div>
+
+				<h3>2 columnas</h3>
+				<p>Tenés dos columnas <strong>que se muestran en tamaño desktop y se escalan en resoluciones altas</strong>.</p>
+				<div class="row">
+					<div class="col-md-8">.col-md-8</div>
+					<div class="col-md-4">.col-md-4</div>
+				</div>
+
+				<h3>Columna única de punta a punta</h3>
+				<p class="text-warning">Para eso no es necesario que le pongas alguna clase... ni siquiera col-xx-12... fijate. :) </p>
+
+				<hr>
+
+				<h3>Two columns with two nested columns</h3>
+				<p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+				<p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+				<div class="row">
+					<div class="col-md-8">
+						.col-md-8
+						<div class="row">
+							<div class="col-md-6">.col-md-6</div>
+							<div class="col-md-6">.col-md-6</div>
+						</div>
+					</div>
+					<div class="col-md-4">.col-md-4</div>
+				</div>
+
+				<hr>
+
+				<h3>Mix: mobile y desktop</h3>
+				<p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+				<p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+				<div class="row">
+					<div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+					<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+					<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+					<div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">.col-xs-6</div>
+					<div class="col-xs-6">.col-xs-6</div>
+				</div>
+
+				<hr>
+
+				<h3>Mixed: mobile, tablet, y desktop</h3>
+				<p></p>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-lg-8">.col-xs-12 .col-sm-6 .col-lg-8</div>
+					<div class="col-xs-6 col-lg-4">.col-xs-6 .col-lg-4</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+					<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+					<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+				</div>
+
+				<hr>
+
+				<h3>Column clearing</h3>
+				<p><a href="http://getbootstrap.com/css/#grid-responsive-resets">Clear floats</a> at specific breakpoints to prevent awkward wrapping with uneven content.</p>
+				<div class="row">
+					<div class="col-xs-6 col-sm-3">
+						.col-xs-6 .col-sm-3
+						<br>
+						Resize your viewport or check it out on your phone for an example.
+					</div>
+					<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+
+					<!-- Add the extra clearfix for only the required viewport -->
+					<div class="clearfix hidden-sm-up"></div>
+
+					<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+					<div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+				</div>
+
+				<hr>
+
+				<h3>Offset, push, y pull resets</h3>
+				<p>Reset offsets, pushes, and pulls at specific breakpoints.</p>
+				<div class="row">
+					<div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+					<div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+					<div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+				</div>
+	    </div>
+		</main>
+
+		<footer class="text-muted">
+			<div class="container">
+				<p class="pull-xs-right">
+					<a href="#">Subir</a>
+				</p>
+				<p>Este es un ejemplo original de &copy; Bootstrap modicado para este framework. Por supuesto podés modificarlo y adaptarlo para lo que necesites.</p>
+				<p>Si estás aprendiendo a usar el framework <a href="../../">visitá la documentación</a> o leé la <a href="../../comenzar/">guía de comienzo rápido</a>.</p>
+			</div>
+		</footer>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+</html>

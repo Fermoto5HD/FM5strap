@@ -4,25 +4,26 @@ title: Accesibilidad
 group: comenzar
 ---
 
-Bootstrap follows common web standards and—with minimal extra effort—can be used to create sites that are accessible to those using <abbr title="Assistive Technology" class="initialism">AT</abbr>.
+Al igual que Bootstrap, FM5strap sigue estándares web y con un mínimo esfuerzo extra se pueden armar páginas que sean accesibles para aquellos que usan <abbr title="Tecnología Asistida" class="initialism">TA</abbr>.
 
-## Component requirements
+## Requerimientos en los componentes
 
-Some common HTML elements are always in need for basic accessibility enhancements through `role`s and Aria attributes. Below is a list of some of the most frequently used ones.
+Algunos elementos en común en HTML son siempre utilizados con algunos agregados de accesibilidad básicas mediante `role`s y atributos Aria. 
+Abajo hay un listado de algunos de los más usados. 
 
 {% callout info %}
-**Heads up!** As we go through the alphas, we'll be moving more accessibility notes here with links to specific sections from other areas of the docs.
+**Atención** Esto se va a ir actualizando conforme a cómo de vaya actualizando Bootstrap v4, quizás en alguna futura release del proyecto original se incluya el listado completo. 
 {% endcallout %}
 
-### Button groups
+### Botoneras agrupadas
 
-In order for assistive technologies–such as screen readers–to convey that a series of buttons is grouped, an appropriate `role` attribute needs to be provided. For button groups, this would be `role="group"`, while toolbars should have a `role="toolbar"`.
+Para hacer que las tecnologías asistidas detecten las series de botoneras agrupadas es necesario agregar un `role` apropiado. Para las botoneras agrupadas normales será `role="group"`, mientras que para las ubicadas en navbars o en barras de herramientas será `role="toolbar"`. 
 
-In addition, groups and toolbars should be given an explicit label, as most assistive technologies will otherwise not announce them, despite the presence of the correct `role` attribute. In the examples provided here, we use `aria-label`, but alternatives such as `aria-labelledby` can also be used.
+También los grupos y barras tienen que tener un label explícito, sino la mayoría de las tecnologías asistidas no podrían hacer mención de esos componentes, por más que hayas puesto el atributo correcto en `role`. En los ejemplos que están acá usamos `aria-label` aunque también se puede usar `aria-labelledby`. 
 
-## Skip navigation
+## Saltar navegación
 
-If your navigation contains many links and comes before the main content in the DOM, add a `Skip to main content` link before the navigation (for a simple explanation, see this [A11Y Project article on skip navigation links](http://a11yproject.com/posts/skip-nav-links/)). Using the `.sr-only` class will visually hide the skip link, and the <code>.sr-only-focusable</code> class will ensure that the link becomes visible once focused (for sighted keyboard users).
+Si tu menú de navegación tiene muchos links y está puesto antes del contenido principal de la página, agregá un link de `Saltar al contenido principal` antes del menú de navegación (si querés saber el porqué de esto visitá el [artículo del Proyecto A11Y sobre el saltar los links de navegación (en inglés)](http://a11yproject.com/posts/skip-nav-links/)). Usando la clase `.sr-only` ocultará visualmente el link para saltar, y la clase <code>.sr-only-focusable</code> te va a asegurar que ese link se hará visible una vez seleccionado en pantalla (para usuarios con teclados especiales).
 
 {% callout danger %}
 Due to long-standing shortcomings/bugs in Chrome (see [issue 262171 in the Chromium bug tracker](https://code.google.com/p/chromium/issues/detail?id=262171 "Chromium bug tracker - Issue 262171: Focus should cycle from named anchor")) and Internet Explorer (see this article on [in-page links and focus order](http://accessibleculture.org/articles/2010/05/in-page-links/)), you will need to make sure that the target of your skip link is at least programmatically focusable by adding `tabindex="-1"`.
@@ -34,22 +35,23 @@ Note that this bug will also affect any other in-page links your site may be usi
 
 {% highlight html %}
 <body>
-  <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+  <a href="#content" class="sr-only sr-only-focusable">Saltar al contenido principal</a>
   ...
   <div class="container" id="content" tabindex="-1">
-    <!-- The main page content -->
+    <!-- El contenido principal -->
   </div>
 </body>
 {% endhighlight %}
 
-## Nested headings
+## Encabezados tabulados
 
-When nesting headings (`<h1>` - `<h6>`), your primary document header should be an `<h1>`. Subsequent headings should make logical use of `<h2>` - `<h6>` such that screen readers can construct a table of contents for your pages.
+Al tabular los encabezados (`<h1>` - `<h6>`), el encabezado principal de la página tiene que ser un `<h1>`. Los encabezados que le siguen tienen que estar ordenados según su prioridad en el rango de los `<h2>` - `<h6>` así los screen readers pueden armar correctamente una tabla de contenidos para las páginas.
 
-Learn more at [HTML CodeSniffer](http://squizlabs.github.io/HTML_CodeSniffer/Standards/Section508/) and [Penn State's Accessability](http://accessibility.psu.edu/headings).
+Podés saber más en [HTML CodeSniffer (en inglés)](http://squizlabs.github.io/HTML_CodeSniffer/Standards/Section508/) y en [Penn State's Accessability (en inglés)](http://accessibility.psu.edu/headings).
 
-## Additional resources
+## Recursos adicionales (en inglés) 
 
-- ["HTML Codesniffer" bookmarklet for identifying accessibility issues](https://github.com/squizlabs/HTML_CodeSniffer)
-- [The A11Y Project](http://a11yproject.com/)
-- [MDN accessibility documentation](https://developer.mozilla.org/en-US/docs/Accessibility)
+- ["Documentación de accesibilidad de Bootstrap"](http://v4-alpha.getbootstrap.com/getting-started/accesibility)
+- [Bookmarklet "HTML Codesniffer" para identificar problemas de accesibilidad](https://github.com/squizlabs/HTML_CodeSniffer)
+- [El Proyecto A11Y](http://a11yproject.com/)
+- [Documentación de accesibilidad de MDN](https://developer.mozilla.org/en-US/docs/Accessibility)

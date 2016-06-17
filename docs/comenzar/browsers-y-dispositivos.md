@@ -94,9 +94,9 @@ Situación similar, las últimas versiónes de los browser de escritorio están 
 
 Para Firefox, aparte del soporte en las últimas versiones estables, también soporta la última [Versión de Soporte Extendido (ESR)](https://www.mozilla.org/en-US/firefox/organizations/faq/) de Firefox.
 
-Unofficially, Bootstrap should look and behave well enough in Chromium and Chrome for Linux, Firefox for Linux, and Internet Explorer 8 and below, though they are not officially supported.
+Extraoficialemente, FM5strap debería verse y andar bien en Chromium y Chrome para Linux, Firefox para Linux e Internet Explorer 8 y demás, por más que no estén soportados oficialmente. 
 
-For a list of some of the browser bugs that Bootstrap has to grapple with, see our [Wall of browser bugs]({{ site.baseurl }}/browser-bugs/).
+Podés ver un listado de algunos de los errores en browsers que FM5strap y Bootstrap tiene que lidiar en el [Muro de errores de los browsers]({{ site.baseurl }}/browser-bugs/).
 
 ## Internet Explorer 9
 
@@ -163,15 +163,15 @@ Por supuesto, FM5strap no soporta los modos de compatibilidad anteriores de Inte
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 {% endhighlight %}
 
-Confirm the document mode by opening the debugging tools: press <kbd>F12</kbd> and check the "Document Mode".
+Confirmá el modo de visualización abriendo el inspector de elementos presionando <kbd>F12</kbd> y verificando en "Modo de visualización".
 
-This tag is included in all of Bootstrap's documentation and examples to ensure the best rendering possible in each supported version of Internet Explorer.
+Esta etiqueta está en toda la documentación y ejemplos para asegurarte de que se renderiza lo mejor posible en cada versión soportada de Internet Explorer. 
 
-See [this StackOverflow question](https://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge) for more information.
+Mirá [esta pregunta en StackOverflow](https://stackoverflow.com/questions/6771258/whats-the-difference-if-meta-http-equiv-x-ua-compatible-content-ie-edge) para más información.
 
 ## Internet Explorer 10 en Windows Phone 8
 
-Internet Explorer 10 en Windows Phone 8 con versiones anteriores a la [Update 3 (a.k.a. GDR3)](http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx) doesn't differentiate **device width** from **viewport width** in `@-ms-viewport` at-rules, and thus doesn't properly apply the media queries in Bootstrap's CSS. To address this, you'll need to **include the following JavaScript to work around the bug**.
+Internet Explorer 10 en Windows Phone 8 con versiones anteriores a la [Update 3 (a.k.a. GDR3)](http://blogs.windows.com/windows_phone/b/wpdev/archive/2013/10/14/introducing-windows-phone-preview-for-developers.aspx) no diferencia el **ancho del dispositivo** del **ancho del viewport** en las reglas `@-ms-viewport`, y esto hace que los media queries (tanto de los CSS de FM5strap como el de Bootstrap) no se apliquen correctamente. Para solventarlo, tenés que **incluir el siguiente Javascript para solventar el bug**.
 
 {% highlight js %}
 // Copyright 2014-2015 Twitter, Inc.
@@ -187,38 +187,38 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 }
 {% endhighlight %}
 
-Para más información y lineamientos de uso, leé [Windows Phone 8 y Device-Width (en inglés)](http://timkadlec.com/2013/01/windows-phone-8-and-device-width/).
+Para más información y lineamientos de uso, leé [Windows Phone 8 y el ancho de dispositivo (en inglés)](http://timkadlec.com/2013/01/windows-phone-8-and-device-width/).
 
-As a heads up, we include this in all of Bootstrap's documentation and examples as a demonstration.
+Como aclaración, incluyo esto en to(ooo)da la documentación y ejemplos de FM5strap para demostraciones. 
 
 ## Modals, navbars, y teclados virtuales
 
-### Overflow and scrolling
+### Overflow y scrolling
 
-Support for `overflow: hidden;` on the `<body>` element is quite limited in iOS and Android. To that end, when you scroll past the top or bottom of a modal in either of those devices' browsers, the `<body>` content will begin to scroll.
+El soporte de `overflow: hidden;` en el elemento `<body>` es un poco limitado en iOS y en Android. Para ese fin, cuando scrolleás por arriba o por abajo de un modal en cualquiera de los browsers de esos dispositivos, el contenido de `<body>` comenzará a scrollearse.
 
-### Virtual keyboards
+### Teclados virtuales
 
-Also, note that if you're using a fixed navbar or using inputs within a modal, iOS has a rendering bug that doesn't update the position of fixed elements when the virtual keyboard is triggered. A few workarounds for this include transforming your elements to `position: absolute;` or invoking a timer on focus to try to correct the positioning manually. This is not handled by Bootstrap, so it is up to you to decide which solution is best for your application.
+Además, si estás usando una barra anclada o usando inputs en un modal, en iOS se va a renderizar mal porque no actualiza la posición de los elementos anclados o fixeados al activarse el teclado virtual. Unos ligeros métodos para corregirlo es transformar los elementos a `position: absolute` o llamar un temporizador para corregir la posición en forma manual mediante Javascript. Esto no está incorporado ni en FM5strap ni en Bootstrap, asi que tendrás que ver qué solución vas a tomar para el caso que estés manejando. 
 
-### Navbar Dropdowns
+### Menús contextuales en los Navbar
 
-The `.dropdown-backdrop` element isn't used on iOS in the nav because of the complexity of z-indexing. Thus, to close dropdowns in navbars, you must directly click the dropdown element (or [any other element which will fire a click event in iOS](https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile)).
+El elemento `.dropdown-backdrop` no es utilizado en iOS en los nav por la complejidad al momento de ordenarlo en el eje z (o z-indexing). Sumado a que para cerrar los dropdowns en los navbars tenés que hacer click en el elemento del dropdown (o [cualquier otro elemento que ejecute un evento de click (en inglés)](https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile)).
 
 ## Browser zooming
 
-Page zooming inevitably presents rendering artifacts in some components, both in Bootstrap and the rest of the web. Depending on the issue, we may be able to fix it (search first and then open an issue if need be). However, we tend to ignore these as they often have no direct solution other than hacky workarounds.
+El zoom en las páginas inevitablemente presenta problemas al renderizar algunos componentes, tanto en FM5strap como en el resto de la web. Dependiendo del problema, puede ser posible arreglarlo (primero buscalo en el tracker y luego abrí un issue en caso de ser necesario, en el repositorio de Bootstrap). Aunque, generalmente se tiende a omitir los issues referidos a este problema ya que el equipo de Bootstrap lo intenta solventar con algunos trucos de CSS al no encontrar una solución directa.
 
-## Sticky `:hover`/`:focus` on mobile
-Even though real hovering isn't possible on most touchscreens, most mobile browsers emulate hovering support and make `:hover` "sticky". In other words, `:hover` styles start applying after tapping an element and only stop applying after the user taps some other element. On mobile-first sites, this behavior is normally undesirable.
+## `:hover`/`:focus` pegados en mobile 
+Por más que el hovering real no sea posible en la mayoría de las pantallas táctiles, muchos browsers mobile emulan un soporte de hovering y hacen que el `:hover` quede como "pegado". En otras palabras, los estilos para `:hover` se aplican después de tocar un elemento y esos estilos con hover se van cuando tocás en otro elemento. En sitios del estilo mobile-first este error es normalmente indeseable.
 
-Bootstrap includes a workaround for this, although it is disabled by default. By setting `$enable-hover-media-query` to `true` when compiling from Sass, Bootstrap will use [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) to disable `:hover` styles in browsers that emulate hovering, thus preventing sticky `:hover` styles. There are some caveats to this workaround; see the shim's documentation for details.
+FM5strap y Bootstrap incluyen un arreglo para esto, por más que esté desactivado por defecto. Con setear `$enable-hover-media-query` en `true` cuando lo compilás en Sass, FM5strap usará [mq4-hover-shim](https://github.com/twbs/mq4-hover-shim) para deshabilitar los estilos `:hover` en browsers que emulan el hovering, y previenen que los estilos `:hover` se queden "pegados". 
 
-## Printing
+## Imprimiendo
 
-Even in some modern browsers, printing can be quirky.
+Incluso en algunos browsers modernos la impresión puede ser un problemita. 
 
-In particular, as of Chrome v32 and regardless of margin settings, Chrome uses a viewport width significantly narrower than the physical paper size when resolving media queries while printing a webpage. This can result in Bootstrap's extra-small grid being unexpectedly activated when printing. [See #12078 for some details.](https://github.com/twbs/bootstrap/issues/12078) Suggested workarounds:
+En particular, como Chrome v32 y su configuración de márgenes, Chrome usa un ancho de viewport bastante chico comprarado al tamaño de papel al momento de resolver las media queries al querer imprimir una página web. Esto puede resultar en que los elementos `col-xs-??` se activen de la nada al momento de imprimir. [Ver bug #12078 de Bootstrap para más detalles.](https://github.com/twbs/bootstrap/issues/12078) Algunas soluciones:
 
 Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari to use an unusually small font size when printing. See <a href="https://github.com/twbs/bootstrap/issues/14868">#14868</a> for more details. One potential workaround for this is adding the following CSS:
 
@@ -230,13 +230,13 @@ Also, as of Safari v8.0, fixed-width <code>.container</code>s can cause Safari t
 }
 {% endhighlight %}
 
-## Android stock browser
+## Browser stock (o de fábrica) de Android
 
-Out of the box, Android 4.1 (and even some newer releases apparently) ship with the Browser app as the default web browser of choice (as opposed to Chrome). Unfortunately, the Browser app has lots of bugs and inconsistencies with CSS in general.
+En Android 4.1 (y en algunas versiones más recientes de Android también) vienen con un Browser o Navegador integrado de fábrica. Desafortunadamente, tiene un montón de bugs e inconsistencias con el CSS en general.
 
-#### Select menu
+#### Menú Select
 
-On `<select>` elements, the Android stock browser will not display the side controls if there is a `border-radius` and/or `border` applied. (See [this StackOverflow question](https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with) for details.) Use the snippet of code below to remove the offending CSS and render the `<select>` as an unstyled element on the Android stock browser. The user agent sniffing avoids interference with Chrome, Safari, and Mozilla browsers.
+En los elementos `<select>`, el browser de fábrica (o stock) de Android no podría mostrar los controles del costado si hay un  `border-radius` y/o un `border` aplicado. (Sino mirá [esta pregunta en StackOverflow](https://stackoverflow.com/questions/14744437/html-select-box-not-showing-drop-down-arrow-on-android-version-4-0-when-set-with) para más detalles.) Usá el extracto de código de acá debajo para sacar el CSS conflictivo y renderizar el `select` como un elemento sin estilo alguno en el browser de fábrica (o stock) de Android. El cambio del user agent evita interferencias con los browsers Chrome, Safari, y Mozilla.
 
 {% highlight html %}
 <script>
@@ -250,12 +250,12 @@ $(function () {
 </script>
 {% endhighlight %}
 
-Want to see an example? [Check out this JS Bin demo.](http://jsbin.com/OyaqoDO/2)
+¿Querés ver un ejemplo? [Miralo en esta demo en JS Bin.](http://jsbin.com/OyaqoDO/2)
 
-## Validators
+## Validadores
 
-In order to provide the best possible experience to old and buggy browsers, Bootstrap uses [CSS browser hacks](http://browserhacks.com) in several places to target special CSS to certain browser versions in order to work around bugs in the browsers themselves. These hacks understandably cause CSS validators to complain that they are invalid. In a couple places, we also use bleeding-edge CSS features that aren't yet fully standardized, but these are used purely for progressive enhancement.
+Para ofrecer la mejor experiencia de navegación para los browsers viejos y recontra bugueados (hola Internet Explorer), FM5strap y Bootstrap usa [CSS browser hacks](http://browserhacks.com) en lugares puntuales para hacer bypass a algunos bugs de CSS en algunos browsers y mostrarlos correctamente. Estos hacks por algún motivo hacen que los validadores de CSS hinchen un poco diciendo que son inválidos. En un par de lugares usa también características de bleeding-edge en los CSS que aún no fueron estandarizados pero que son usados puramente para mejorarlos progresivamente.
 
-These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.
+Estas advertencias de validación no importan mucho en la práctica desde que la part sin hack del CSS no valida totalmente y la parte con hack no interfiere con el funcionamiento correcto de la parte sin hack, siendo este el motivo del porqué se ignoran estas advertencias puntuales. 
 
-Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for [a certain Firefox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=654072).
+La documentación HTML tiene algunas advertencias de validación triviales e interconsecuenciales debido a la inclusión de un pequeño arreglo para [un error puntual en Firefox (en inglés)](https://bugzilla.mozilla.org/show_bug.cgi?id=654072).

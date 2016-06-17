@@ -3,140 +3,119 @@ layout: home
 title: FM5strap
 ---
 
-<main class="bd-masthead" id="content" role="main">
-  <div class="jumbotron-container" style="background-image: url({{ site.baseurl }}/images/jumbotron.jpg);">
-    <div class="breadcrumb-container">
-      <div class="container">
-        <ol class="breadcrumb">
-           {% if page.layout == "home" %}
-            <li class="active">Inicio</li>
-          {% else %}
-            <li><a href="/">Inicio</a></li>
-            <li class="active">Sección</li>
-          {% endif %}
-          <!--<li><a href="../../..">Home</a></li>
-          <li><a href="../..">Portfolio</a></li>
-          <li class="active">Ecobici</li>-->
-        </ol>
+<main class="content-w-fixed-navbar">
+  <div class="bd-masthead" id="content" role="main">
+    <div class="jumbotron-container" style="background-image: url({{ site.baseurl }}/images/jumbotron.jpg);">
+      <div class="jumbotron">
+        <div class="container">
+          <h1>FM5strap v{{ site.current_version }}</h1>
+          <p>Es un framework basado en Bootstrap v4 para acelerar el desarrollo de mis sitios web sin tener que estar aplicando todo el tiempo las mismas modificaciónes.</p>
+        </div>
+      </div>
+      <div class="breadcrumb-container">
+        <div class="container">
+          <ol class="breadcrumb">
+            <p><strong>Atención:</strong> Documentación en desarrollo. Como el llollos xd AAAAAAAAAAAAAAAAAAAAAAAA-</p>
+          </ol>
+        </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <div class="container">
-        <h1>FM5strap v{{ site.current_version }}</h1>
-        <p>Es un framework basado en Bootstrap v4 para acelerar el desarrollo de mis sitios web sin tener que estar aplicando todo el tiempo las mismas modificaciónes.</p>
+    <div class="container text-xs-center">
+      <br/>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="bd-featurette-title">Arranque rápido</h2>
+            </div>
+            <div class="card-body">
+              <p>¿Querés arrancar rápido? ¡Bajatelo de una! Después tenés que linkear los CSS, JS e imágenes en el DOM. Sin nada extra, sólo lo escencial para usar el framework. </p>
+            </div>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg btn-block" href="{{ site.baseurl }}/comenzar/descargar/" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Bajar FM5strap</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <h2 class="bd-featurette-title">Mejor desarrollo</h2>
+            </div>
+            <div class="card-body">
+              <p>Incluí los archivos SASS y JS vía Bower, Composer, Meteor, o npm. Estos paquetes no incluyen la documentación pero incluye el Gruntfile para compilar y el Readme.</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-secondary btn-lg btn-block" href="{{ site.baseurl }}/comenzar/descargar/#package-managers">Instalar FM5strap</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-header">
+              ¿Buscás sólo una grilla o algo puntual?
+            </div>
+            <div class="card-body">
+              Hay estructuras especiales determinadas para cada cosa, como la grilla o funciones JS, creados por el equipo de Bootstrap. Visitá su proyecto principal. 
+            </div>
+            <div class="card-footer">
+              <a href="http://v4-alpha.getbootstrap.com/getting-started/download/#custom-builds" class="btn btn-secondary btn-block">Partes de Bootstrap</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="breadcrumb-container">
-      <div class="container">
-        <ol class="breadcrumb">
-          <p><strong>Atención:</strong> Versión en desarrollo. Como el llollos xd AAAAAAAAAAAAAAAAAAAAAAAA-</p>
-        </ol>
-      </div>
+      {% include ads.html %}
     </div>
   </div>
-  <div class="container text-xs-center">
-    <h2 class="bd-featurette-title">¿Querés arrancar rápido? ¡Bajatelo de una!</h2>
-    <p class="lead">
-      <a href="{{ site.baseurl }}/getting-started/download" class="btn btn-primary btn-lg" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Bajar FM5strap</a>
-    </p>
-    {% include ads.html %}
+
+  <div class="bd-featurette">
+    <div class="container">
+      <hr class="half-rule m-t-0">
+      <p><strong>Looking for something simpler?</strong> Customized builds of Bootstrap's CSS and JS are also available.</p>
+      <a href="{{ site.baseurl }}/comenzar/descargar/#custom-builds" class="btn btn-bs btn-outline">More download options</a>
+    </div>
+  </div>
+
+  <div class="bd-featurette">
+    <div class="container">
+      <h2 class="bd-featurette-title">Designed for everyone, everywhere.</h2>
+      <p class="lead">Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+
+      <div class="row">
+        <div class="col-sm-4 m-b-3">
+          <img src="assets/img/sass.png" alt="Sass support" class="img-fluid">
+          <h4>Preprocessor</h4>
+          <p>Bootstrap ships with vanilla CSS, but its source code utilizes <a href="http://sass-lang.com/">Sass</a>, a popular CSS preprocessor. Quickly get started with precompiled CSS or build on the source.</p>
+        </div>
+        <div class="col-sm-4 m-b-3">
+          <img src="assets/img/devices.png" alt="Responsive across devices" class="img-fluid">
+          <h4>One framework, every device.</h4>
+          <p>Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.</p>
+        </div>
+        <div class="col-sm-4 m-b-3">
+          <img src="assets/img/components.png" alt="Components" class="img-fluid">
+          <h4>Full of features</h4>
+          <p>With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.</p>
+        </div>
+      </div>
+
+      <hr class="half-rule m-t-0">
+
+      <p><strong>FM5strap, al igual que Bootstrap, es de código abierto!</strong> Está hosteado, publicado y mantenido en GitHub, como cualquier programador promedio.</p>
+      <a href="{{ site.repo }}" class="btn btn-primary btn-block">Ir al repositorio</a>
+    </div>
+  </div>
+
+  <div class="bd-featurette">
+    <div class="container">
+      <h2 class="bd-featurette-title">Basado en Bootstrap v4.</h2>
+      <p class="lead">
+        Este proyecto está totalmente basado en Bootstrap v4. Si querés ver el proyecto original podés visitar la página del proyecto y su repositorio. 
+      </p>
+
+      <p class="lead">
+        <a href="{{ site.bootstrap }}" class="btn btn-primary">Página de Bootstrap v4</a>
+        <a href="http://github.com/twbs/bootstrap" class="btn btn-secondary">Repositorio del proyecto oficial</a>
+      </p>
+    </div>
   </div>
 </main>
-
-<div class="bd-featurette">
-  <div class="container">
-    <h2 class="bd-featurette-title">Easy to get started.</h2>
-    <p class="lead">Quickly include Bootstrap's CSS and JS into any project. Use your favorite package manager, download the source, or use the Bootstrap CDN.</p>
-
-    <div class="row">
-      <div class="col-sm-6 m-b-3">
-        <h4>Managed dependencies</h4>
-        <p>Include Bootstrap's source Sass and JavaScript files via Bower, Composer, Meteor, or npm. Package managed installs don't include documentation, but do include our Gruntfile and readme.</p>
-        <p>
-          <a class="btn btn-bs btn-outline" href="{{ site.baseurl }}/getting-started/download/#package-managers">View install methods</a>
-        </p>
-      </div>
-      <div class="col-sm-6 m-b-3">
-        <h4>Bootstrap CDN</h4>
-        <p>When you just need to include Bootstrap's compiled CSS and JS, use the Bootstrap CDN, free from the Max CDN folks.</p>
-{% highlight html %}
-<link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
-<script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
-{% endhighlight %}
-        <p class="text-muted">Not yet available, but hopefully soon!</p>
-      </div>
-    </div>
-
-    <hr class="half-rule m-t-0">
-
-    <p><strong>Looking for something simpler?</strong> Customized builds of Bootstrap's CSS and JS are also available.</p>
-    <a href="{{ site.baseurl }}/getting-started/download/#custom-builds" class="btn btn-bs btn-outline">More download options</a>
-  </div>
-</div>
-
-<div class="bd-featurette">
-  <div class="container">
-    <h2 class="bd-featurette-title">Designed for everyone, everywhere.</h2>
-    <p class="lead">Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
-
-    <div class="row">
-      <div class="col-sm-4 m-b-3">
-        <img src="assets/img/sass.png" alt="Sass support" class="img-fluid">
-        <h4>Preprocessor</h4>
-        <p>Bootstrap ships with vanilla CSS, but its source code utilizes <a href="http://sass-lang.com/">Sass</a>, a popular CSS preprocessor. Quickly get started with precompiled CSS or build on the source.</p>
-      </div>
-      <div class="col-sm-4 m-b-3">
-        <img src="assets/img/devices.png" alt="Responsive across devices" class="img-fluid">
-        <h4>One framework, every device.</h4>
-        <p>Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.</p>
-      </div>
-      <div class="col-sm-4 m-b-3">
-        <img src="assets/img/components.png" alt="Components" class="img-fluid">
-        <h4>Full of features</h4>
-        <p>With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.</p>
-      </div>
-    </div>
-
-    <hr class="half-rule m-t-0">
-
-    <p><strong>Bootstrap is open source!</strong> It's hosted, developed, and maintained on GitHub by folks like you.</p>
-    <a href="{{ site.repo }}" class="btn btn-bs btn-outline">View the GitHub project</a>
-  </div>
-</div>
-
-<div class="bd-featurette">
-  <div class="container">
-    <h2 class="bd-featurette-title">Official Bootstrap Themes.</h2>
-    <p class="lead">
-      Take Bootstrap to the next level with official premium themes. Each theme is its own toolkit featuring all of Bootstrap, brand new components and plugins, full docs, build tools, and more.
-    </p>
-
-    <p class="lead">
-      <a href="{{ site.themes }}" class="btn btn-bs btn-outline">Browse themes</a>
-    </p>
-
-    <img class="img-fluid center-block" src="{{ site.baseurl }}/assets/img/bs-themes.png" alt="Bootstrap Themes" width="1024" height="388">
-  </div>
-</div>
-
-<div class="bd-featurette">
-  <div class="container">
-    <h2 class="bd-featurette-title">Built with Bootstrap.</h2>
-    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="../examples">collection of examples</a> or by exploring some of our favorites.</p>
-
-    <div class="row bd-featured-sites">
-    {% for showcase in site.data.showcase %}
-      <div class="col-xs-6 col-sm-3">
-        <a href="{{ showcase.expo_url }}" target="_blank" title="{{ showcase.name }}">
-          <img src="{{ site.baseurl }}/assets/img/expo-{{ showcase.img }}.jpg" alt="{{ showcase.name }}" class="img-fluid">
-        </a>
-      </div>
-    {% endfor %}
-    </div>
-
-    <hr class="half-rule">
-
-    <p>We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo.</p>
-    <a href="{{ site.expo }}" class="btn btn-bs btn-outline">Explore the Expo</a>
-  </div>
-</div>

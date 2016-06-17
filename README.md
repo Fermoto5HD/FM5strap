@@ -14,7 +14,11 @@ Por supuesto será actualizado conforme a las actualizaciones que vaya recibiend
 
 ## Changelog 
 
-### v1.0 
+### v1.1 
+- Jumbotrons, navbars, breadcrumbs y más, modificados a los lineamientos del framework. 
+- Modificaciones a los archivos de compilación, e inclusión de las imágenes dentro del `dist`. 
+
+### v1.0.0 
 - Primera carga. 
 
 
