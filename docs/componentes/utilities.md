@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Utility classes
-group: components
+group: componentes
 ---
 
 Bootstrap includes dozens of utilities—classes with a single purpose. They're designed to reduce the frequency of highly repetitive declarations in your CSS while allowing for quick and easy development.
@@ -261,7 +261,7 @@ Necessary for following [accessibility best practices](../getting-started/#acces
 {% endcomment %}
 
 {% highlight html %}
-<a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+<a class="sr-only sr-only-focusable" href="#content">Saltar hacia el contenido principal</a>
 {% endhighlight %}
 
 {% highlight scss %}
@@ -272,28 +272,28 @@ Necessary for following [accessibility best practices](../getting-started/#acces
 }
 {% endhighlight %}
 
-## Image replacement
+## Reemplazo de imagen
 
-Utilize the `.text-hide` class or mixin to help replace an element's text content with a background image.
+Usá la clase `.text-hide` o creá un mixin para ayudar a reemplazar un contenido en texto con una imagen de fondo. 
 
 {% highlight html %}
-<h1 class="text-hide">Custom heading</h1>
+<h1 class="text-hide">Encabezado personalizado</h1>
 {% endhighlight %}
 
 {% highlight scss %}
-// Usage as a mixin
+// Forma de uso como un mixin
 .heading {
   @include text-hide;
 }
 {% endhighlight %}
 
-## Responsive embeds
+## Embebidos responsive
 
-Allow browsers to determine video or slideshow dimensions based on the width of their containing block by creating an intrinsic ratio that will properly scale on any device.
+Permite a los browsers a que determinen las dimensiones del video o slideshow basándose en el ancho del bloque contenedor al crear un radio intrínseco que se pueda escalar correctamente en cualquier device. 
 
-Rules are directly applied to `<iframe>`, `<embed>`, `<video>`, and `<object>` elements; optionally use an explicit descendant class `.embed-responsive-item` when you want to match the styling for other attributes.
+Las reglas están directamente aplicadas a los elementos `<iframe>`, `<embed>`, `<video>`, y `<object>`; opcionalmente podés usar una clase descendiente explícita llamada `.embed-responsive-item` cuando querés hacer coincidir el estilo con otros atributos.
 
-**Pro-Tip!** You don't need to include `frameborder="0"` in your `<iframe>`s as we override that for you.
+**Pro-Tip!** No necesitás incluir el atributo `frameborder="0"` en el `<iframe>` porque eso ya está integrado en los estilos.
 
 {% example html %}
 <div class="embed-responsive embed-responsive-16by9">
@@ -304,22 +304,22 @@ Rules are directly applied to `<iframe>`, `<embed>`, `<video>`, and `<object>` e
 Aspect ratios can be customized with modifier classes.
 
 {% highlight html %}
-<!-- 21:9 aspect ratio -->
+<!-- Aspecto 21:9 -->
 <div class="embed-responsive embed-responsive-21by9">
   <iframe class="embed-responsive-item" src="..."></iframe>
 </div>
 
-<!-- 16:9 aspect ratio -->
+<!-- Aspecto 16:9 -->
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" src="..."></iframe>
 </div>
 
-<!-- 4:3 aspect ratio -->
+<!-- Aspecto 4:3 -->
 <div class="embed-responsive embed-responsive-4by3">
   <iframe class="embed-responsive-item" src="..."></iframe>
 </div>
 
-<!-- 1:1 aspect ratio -->
+<!-- Aspecto 1:1 -->
 <div class="embed-responsive embed-responsive-1by1">
   <iframe class="embed-responsive-item" src="..."></iframe>
 </div>

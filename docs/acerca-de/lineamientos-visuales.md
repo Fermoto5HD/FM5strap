@@ -1,46 +1,22 @@
 ---
 layout: docs
-title: Lineamientos visuales
+title: Lineamientos de uso
+description: Para usar este framework es importante saber que hay un lineamiento visual, el cual se compone por la marca (recursos y formas de mostrarla), el nombre del framework y la paleta de colores. 
 group: acerca-de
 ---
-
-Para usar este framework es importante saber que hay un lineamiento visual, el cual se compone por la marca (recursos y formas de mostrarla), el nombre del framework y la paleta de colores. 
 
 ## La marca
 
 Podés usar tanto la marca ícono ("FM5HD") como la marca general "Fermoto5HD". 
 Ambas marcas están disponibles en los recursos originales bajo SVG y en el caso de la marca ícono en los diversos tamaños para cada caso (íconos en tamaños para pestañas como en las pantalla inicial de Chrome Mobile). 
+Para bajar los recursos simplemente hacé click derecho sobre la imagen y seleccioná "Guardar imagen como...". 
 
 <div class="bd-brand-logos">
   <div class="bd-brand-item">
-    <div class="bd-booticon bd-booticon-lg">B</div>
+    <img class="svg" src="{{ site.baseurl }}/dist/img/brand.svg" alt="Fermoto5HD" width="144" height="144">
   </div>
   <div class="bd-brand-item inverse">
-    <div class="bd-booticon bd-booticon-lg bd-booticon-inverse">B</div>
-  </div>
-</div>
-<div class="bd-brand-logos">
-  <div class="bd-brand-item">
-    <h1>Bootstrap</h1>
-  </div>
-  <div class="bd-brand-item inverse">
-    <h1>Bootstrap</h1>
-  </div>
-</div>
-
-## Recursos en SVG
-
-Download the Bootstrap mark in one of three styles, each available as an SVG file. Right click, Save as.
-
-<div class="bd-brand-logos">
-  <div class="bd-brand-item">
-    <img class="svg" src="{{ site.baseurl }}/assets/brand/bootstrap-solid.svg" alt="Bootstrap" width="144" height="144">
-  </div>
-  <div class="bd-brand-item inverse">
-    <img class="svg" src="{{ site.baseurl }}/assets/brand/bootstrap-outline.svg" alt="Bootstrap" width="144" height="144">
-  </div>
-  <div class="bd-brand-item inverse">
-    <img class="svg" src="{{ site.baseurl }}/assets/brand/bootstrap-punchout.svg" alt="Bootstrap" width="144" height="144">
+    <h1>FM5strap</h1>
   </div>
 </div>
 

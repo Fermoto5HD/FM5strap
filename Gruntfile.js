@@ -1,5 +1,5 @@
 /*
-    Gruntfile de FM5strap v1.1
+    Gruntfile de FM5strap v1.2
     Basado en Bootstrap v4.0.0-alpha.2
     Bootstrap está licenciado bajo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
     FM5strap esta liceniado bajo CC-BY-4.0 (https://github.com/Fermoto5HD/FM5strap/LICENSE)

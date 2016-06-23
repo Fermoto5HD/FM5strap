@@ -12,9 +12,9 @@ permalink:        pretty
 source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
-port:             9001
+port:             3000
 baseurl:          ""
-url:              http://Fermoto5HD.github.com/FM5strap
+url:              http://Fermoto5HD.github.io/FM5strap
 encoding:         UTF-8
 exclude:          [assets/scss/]
 
