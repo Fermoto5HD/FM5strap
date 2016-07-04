@@ -255,3 +255,25 @@
     @include border-radius($btn-border-radius);
   }
 }
+
+.nav-responsive {
+  transition: 0.5s; 
+  width: 100%;
+  @media (min-width: 768px) {
+    width: inherit;
+  }
+  li, .nav-item{
+    width: 100%;
+    margin-left: 1rem;
+    @media (min-width: 768px) {
+      width: inherit; margin-left: 1rem
+    }
+  }
+  @media (min-width: 768px) {
+    li.nav-item+.nav-item, 
+    .nav-item+.nav-item, 
+    .nav-link+.nav-link {
+      margin-left: 1rem
+    }
+  }
+}

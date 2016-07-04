@@ -1,17 +1,16 @@
 ---
 layout: docs
-title: Grid system
+title: Sistema de grillas
+description: El sistema de grillas heredado de Bootstrap divide el DOM en 12 columnas simétricas para organizar el contenido en [diversos tamaños de ancho] ({{ site.baseurl }}/layout/resumen/#responsive-breakpoints) en el DOM. 
 group: layout
 ---
-
-Bootstrap includes a powerful mobile-first grid system for building layouts of all shapes and sizes. It's based on a 12 column layout and has multiple tiers, one for each [media query range]({{ site.baseurl }}/layout/overview/#responsive-breakpoints). You can use it with Sass mixins or our predefined classes.
 
 ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## How it works
+## Cómo funciona
 
 At a high level, here's how the grid system works:
 
@@ -28,21 +27,21 @@ At a high level, here's how the grid system works:
 
 Sounds good? Great, let's move on to seeing all that in an example.
 
-## Quick start example
+## Ejemplo rápido
 
-If you're using Bootstrap's compiled CSS, this the example you'll want to start with.
+Este ejemplo te va a servir para comenzar a amigarte con la estructura de columnas tanto de FM5strap, Bootstrap y otros frameworks (aunque cambien las etiquetas, claro). 
 
 {% example html %}
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      One of three columns
+      Una de 3 columnas
     </div>
     <div class="col-sm-4">
-      One of three columns
+      Una de 3 columnas
     </div>
     <div class="col-sm-4">
-      One of three columns
+      Una de 3 columnas
     </div>
   </div>
 </div>
@@ -63,23 +62,23 @@ See how aspects of the Bootstrap grid system work across multiple devices with a
       <tr>
         <th></th>
         <th class="text-xs-center">
-          Extra small<br>
+          Muy angosto<br>
           <small>&lt;544px</small>
         </th>
         <th class="text-xs-center">
-          Small<br>
+          Angosto<br>
           <small>&ge;544px</small>
         </th>
         <th class="text-xs-center">
-          Medium<br>
+          Mediano<br>
           <small>&ge;768px</small>
         </th>
         <th class="text-xs-center">
-          Large<br>
+          Ancho<br>
           <small>&ge;992px</small>
         </th>
         <th class="text-xs-center">
-          Extra large<br>
+          Muy ancho<br>
           <small>&ge;1200px</small>
         </th>
       </tr>

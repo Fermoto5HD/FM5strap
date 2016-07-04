@@ -14,15 +14,15 @@
 
   <div class="clearfix">
     <div class="container">
-      <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+      <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse"  data-target="#nav-responsive" style="font-family: inherit;">
         &#9776;
       </button>
       <a class="navbar-brand" href="{{ site.baseurl }}/"></a>
-      <nav class="nav navbar-nav pull-xs-right">
-        <a class="nav-item nav-link {% if page.layout == "docs" %}active{% endif %}" href="{{ site.baseurl }}/comenzar/introduccion/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentación</a>
-        <a class="nav-item nav-link {% if page.title == "Ejemplos" %}active{% endif %}" href="{{ site.baseurl }}/ejemplos/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Ejemplos');">Ejemplos</a>
-        <a class="nav-item nav-link" href="{{ site.bootstrap }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">Bootstrap v4</a>
-      </nav>
+      <ul class="nav navbar-nav pull-xs-right collapse navbar-toggleable-sm nav-responsive" id="nav-responsive">
+        <li class="nav-item nav-link {% if page.layout == "docs" %}active{% endif %}"><a href="{{ site.baseurl }}/comenzar/introduccion/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentación</a></li>
+        <li class="nav-item nav-link {% if page.title == "Ejemplos" %}active{% endif %}"><a href="{{ site.baseurl }}/ejemplos/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Ejemplos');">Ejemplos</a></li>
+        <li class="nav-item nav-link"><a href="{{ site.bootstrap }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">Bootstrap v4</a></li>
+      </ul>
     </div>
   </div>
 </header>

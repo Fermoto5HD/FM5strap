@@ -62,6 +62,8 @@ button.list-group-item {
   width: 100%;
   color: $list-group-link-color;
   text-align: inherit;
+  opacity: 0.5;
+  transition: 0.5s; 
 
   .list-group-item-heading {
     color: $list-group-link-heading-color;
@@ -72,6 +74,7 @@ button.list-group-item {
     color: $list-group-link-hover-color;
     text-decoration: none;
     background-color: $list-group-hover-bg;
+    opacity: 1; 
   }
 }
 

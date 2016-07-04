@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Tablas
+description: Las tablas permiten organizar la información en forma más ordenada. Para estilizarlas con sólo agregar la clase "table" a las etiquetas "table" ya alcanza y sobra. 
 group: contenido
 ---
 

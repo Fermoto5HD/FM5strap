@@ -23,13 +23,13 @@ gems:
   - jekyll-sitemap
 
 # Custom vars
-current_version:  1.0.0
+current_version:  1.1.6
 repo:             https://github.com/Fermoto5HD/FM5strap
 slack:            https://bootstrap-slack.herokuapp.com
 
 download:
-  source:         https://github.com/Fermoto5HD/FM5strap/archive/v1.1.zip
-  dist:           https://github.com/Fermoto5HD/FM5strap/releases/download/v1.1/fm5strap-1.1-dist.zip
+  source:         https://github.com/Fermoto5HD/FM5strap/archive/v1.1.6.zip
+  dist:           https://github.com/Fermoto5HD/FM5strap/releases/download/v1.1/fm5strap-1.1.6-dist.zip
 
 blog:             http://blog.getbootstrap.com
 expo:             http://expo.getbootstrap.com

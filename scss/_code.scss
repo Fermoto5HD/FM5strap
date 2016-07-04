@@ -40,6 +40,8 @@ pre {
   font-size: 90%;
   line-height: $line-height;
   color: $pre-color;
+  background-color: $pre-bg; 
+  border-radius: 5px; 
 
   // Account for some code outputs that place code tags in pre tags
   code {

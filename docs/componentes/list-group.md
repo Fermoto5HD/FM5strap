@@ -1,12 +1,9 @@
 ---
 layout: docs
-title: List group
-group: components
+title: Grupos de listas
+description: Los grupos de listas son un componente ideal para mostrar no sólo listados simples de ítems, también listados más complejos con contenidos diversos en las mismas. 
+group: componentes
 ---
-
-List groups are a flexible and powerful component for displaying not only simple lists of elements, but complex ones with custom content.
-
-## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
@@ -24,9 +21,9 @@ List groups are a flexible and powerful component for displaying not only simple
 </ul>
 {% endexample %}
 
-## Labels
+## Badges
 
-Add labels to any list group item to show unread counts, activity, etc.
+Agregá badges a cualquier ítem del listado para mostrar elementos sin contar, actividad, etc. 
 
 {% example html %}
 <ul class="list-group">

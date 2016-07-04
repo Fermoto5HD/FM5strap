@@ -1,47 +1,46 @@
 ---
 layout: docs
 title: Codigo
+description: Estilos para agregar porciones pequeñas o grandes de código. 
 group: contenido
 ---
 
-Styles for inline code snippets and longer, multiline blocks of code.
-
-## Contents
+## Contenidos
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Inline code
+## Alineado con el texto
 
-Wrap inline snippets of code with `code`. Be sure to escape HTML angle brackets.
+Podés escribir pedazos de código en una misma línea de texto usando `code`. Para escapar las aperturas y cierres de las etiquetas HTML usá `&lt;` y `&gt;`.
 
 {% example html %}
-For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+Por ejemplo, <code>&lt;section&gt;</code> tendría que mostrarse como código en línea con este texto.
 {% endexample %}
 
-## Preformatted text
+## Bloques de código
 
-Or, code blocks. Use `<pre>`s for multiple lines of code. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the `.pre-scrollable` class, which will set a max-height of 350px and provide a y-axis scrollbar.
+Usá la etiqueta `<pre>` para usar múltiples líneas de código. Once again, be sure to escape any angle brackets in the code for proper rendering. You may optionally add the `.pre-scrollable` class, which will set a max-height of 350px and provide a y-axis scrollbar.
 
 {% example html %}
-<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+<pre>&lt;p&gt;Un poco de texto de ejemplo acá...&lt;/p&gt;</pre>
 {% endexample %}
 
 ## Variables
 
-For indicating variables use the `<var>` tag.
+Para indicar variables podés usar la etiqueta `<var>`.
 
 {% example html %}
 <var>y</var> = <var>m</var><var>x</var> + <var>b</var>
 {% endexample %}
 
-## User input
+## Teclas
 
-Use the `<kbd>` to indicate input that is typically entered via keyboard.
+Usá la etiqueta `<kbd>` para indicar el uso de teclas.
 
 {% example html %}
-To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+Para cambiar de directorio tipeá <kbd>cd</kbd> seguido del nombre del directorio al que te vas a mover.<br>
+Para cambiar las opciones presioná <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
 {% endexample %}
 
 ## Sample output

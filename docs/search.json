@@ -3,13 +3,13 @@
 ---
 
 [
-{% assign sorted_pages = site.html_pages | sort: 'title' %}
-{% for page in sorted_pages %}
-    {% if page.title %}
-        {
-            "title" : {{ page.title | jsonify }},
-            "url"   : "{{ site.baseurl }}{{ page.url }}"
-        } {% unless forloop.last %},{% endunless %}
-    {% endif %}
-{% endfor %}
+	{% assign sorted_pages = site.html_pages | sort: 'title' %}
+	{% for page in sorted_pages %}
+	    {% if page.title %}
+	        {
+	            "title" : {{ page.title | jsonify }},
+	            "url"   : "{{ site.baseurl }}{{ page.url }}"
+	        } {% unless forloop.last %},{% endunless %}
+	    {% endif %}
+	{% endfor %}
 ]

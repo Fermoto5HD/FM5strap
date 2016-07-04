@@ -244,7 +244,10 @@ module.exports = function (grunt) {
         config: 'scss/.scss-lint.yml',
         reporterOutput: null
       },
-      src: ['scss/*.scss', '!scss/_normalize.scss']
+      src: ['scss/*.scss', 'docs/assets/css/src/*.scss', '!scss/_normalize.scss'], 
+      docs: {
+        src: ['docs/assets/css/src/*.scss'] 
+      }
     },
 
     postcss: {
@@ -300,7 +303,7 @@ module.exports = function (grunt) {
         ]
       },
       docs: {
-        src: 'docs/assets/css/src/docs.css',
+        src: 'docs/assets/css/dist/docs.css',
         dest: 'docs/assets/css/dist/docs.min.css'
       }
     },
@@ -322,7 +325,7 @@ module.exports = function (grunt) {
         dest: 'docs/examples/'
       },
       docs: {
-        src: 'docs/assets/css/src/docs.css',
+        src: 'docs/assets/css/dist/docs.css',
         dest: 'docs/assets/css/dist/docs.css'
       }
     },
@@ -393,7 +396,7 @@ module.exports = function (grunt) {
         tasks: ['dist-css', 'docs']
       },
       docs: {
-        files: 'docs/assets/scss/**/*.scss',
+        files: 'docs/assets/css/src/*.scss',
         tasks: ['dist-css', 'docs']
       }
     },
@@ -524,7 +527,7 @@ module.exports = function (grunt) {
   });
 
   // Docs task.
-  grunt.registerTask('docs-css', ['postcss:docs', 'postcss:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
+  grunt.registerTask('docs-css', ['sass:docs', 'postcss:docs', 'postcss:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
   grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);

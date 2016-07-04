@@ -5,7 +5,7 @@
 Package.describe({
   name: 'twbs:bootstrap',  // http://atmospherejs.com/twbs/bootstrap
   summary: 'Framework basado en Bootstrap v4 para mis sitios personales.',
-  version: '1.2.0',
+  version: '1.1.6',
   git: 'https://github.com/Fermoto5HD/FM5strap.git'
 });
 
