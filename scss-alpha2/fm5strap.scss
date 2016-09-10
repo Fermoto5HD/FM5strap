@@ -1,0 +1,64 @@
+/*
+	FM5strap v1 (http://Fermoto5HD.16mb.com)
+	Basado en Bootstrap v4.0.0-alpha.2
+	2016 - Armado por Fernando Osorio (Fermoto5HD)
+	Basado en Bootstrap v4.0.0-alpha.2 - Copyright 2011-2016 Twitter, Inc. 
+	Bootstrap está licenciado bajo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+	FM5strap esta licenciado bajo CC-BY-4.0 (https://github.com/Fermoto5HD/FM5strap/LICENSE)
+*/
+
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+
+// Reset and dependencies
+@import "normalize";
+@import "print";
+
+// Core CSS
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+
+// Structure 
+@import "main";
+@import "footer";
+
+// Components
+@import "animation";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "pager";
+@import "shortcuts";
+@import "labels";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "responsive-embed";
+@import "close";
+
+// Components w/ JavaScript
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+
+// Utility classes
+@import "utilities";
+@import "utilities-background";
+@import "utilities-spacing";
+@import "utilities-responsive";

@@ -1,6 +1,6 @@
 # FM5strap
 
-Es un framework basado de Bootstrap v4.0.0-alpha2 modificado a medida para los sitios web de mi autoría que voy realizando. Como a varios de mis sitios que corren esta versión de Bootstrap les estuve aplicando las mismas modificaciones visuales decidí armar esta personalización basada en tonos oscuros con mínimos colores, ideal para navegantes nocturnos como yo. ;) 
+Es un framework basado de Bootstrap v4.0.0-alpha3 modificado a medida para los sitios web de mi autoría que voy realizando. Como a varios de mis sitios que corren esta versión de Bootstrap les estuve aplicando las mismas modificaciones visuales decidí armar esta personalización basada en tonos oscuros con mínimos colores, ideal para navegantes nocturnos como yo. ;) 
 Por supuesto será actualizado conforme a las actualizaciones que vaya recibiendo Bootstrap v4 hasta llegar a la versión estable. 
 
 
@@ -13,6 +13,9 @@ Por supuesto será actualizado conforme a las actualizaciones que vaya recibiend
 
 
 ## Changelog 
+### v1.2.0
+* Migración a v4-alpha3. 
+
 ### v1.1.6
 * Visual: Navbar con menú responsive. 
 * Visual: Tablas hovered y striped. 

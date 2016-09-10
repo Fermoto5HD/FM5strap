@@ -67,8 +67,8 @@
   display: block;
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
   overflow-y: auto;
+  margin-bottom: 1rem;
 }
 
 .bd-content > table > tbody > tr > td, .bd-content > table > tbody > tr > th {
@@ -188,8 +188,8 @@
 }
 
 .bd-search-results .dropdown-item {
-  padding-right: .75rem;
   padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 .bd-search-results .dropdown-item:first-child {
@@ -270,15 +270,15 @@
 .bd-example-row .row > [class^=col-] {
   padding-top: .75rem;
   padding-bottom: .75rem;
-  background-color: rgba(86, 61, 124, .15);
-  border: 1px solid rgba(86, 61, 124, .2);
+  background-color: rgba(86, 61, 124, 0.15);
+  border: 1px solid rgba(86, 61, 124, 0.2);
 }
 
 .bd-example-container {
   min-width: 16rem;
   max-width: 25rem;
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .bd-example-container-header {
@@ -311,14 +311,14 @@
   position: relative;
   padding: 1rem;
   margin: 1rem -1rem;
-  border: solid rgba(255, 255, 255, .1);
+  border: solid rgba(255, 255, 255, 0.1);
   border-width: .2rem 0 0;
 }
 
 .bd-example::after {
+  content: "";
   display: table;
   clear: both;
-  content: "";
 }
 
 .bd-example + .clipboard + .highlight, .bd-example + .highlight {
@@ -360,10 +360,10 @@
 
 @media (min-width: 544px) {
   .bd-example {
-    padding: 1.5rem;
+    margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
-    margin-left: 0;
+    padding: 1.5rem;
     border-width: .2rem;
   }
 }
@@ -537,7 +537,7 @@
 .highlight {
   padding: 1rem;
   margin: 1rem -1rem;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .highlight pre {
@@ -565,8 +565,8 @@
   border-color: #66afe9;
   outline: 0;
   outline: thin dotted\9;
-  -webkit-box-shadow: 0 0 .5rem rgba(102, 175, 233, .6);
-          box-shadow: 0 0 .5rem rgba(102, 175, 233, .6);
+  -webkit-box-shadow: 0 0 0.5rem rgba(102, 175, 233, 0.6);
+  box-shadow: 0 0 0.5rem rgba(102, 175, 233, 0.6);
 }
 
 .table-responsive .highlight pre {
@@ -750,11 +750,11 @@
 }
 
 .bd-team .github-btn {
+  border: none;
   float: right;
   width: 180px;
   height: 1.25rem;
   margin-top: .25rem;
-  border: none;
 }
 
 .bd-team img {
@@ -901,8 +901,8 @@
 }
 
 .err {
-  color: #a00;
-  background-color: #faa;
+  color: #A00;
+  background-color: #FAA;
 }
 
 .k {
@@ -926,8 +926,8 @@
 }
 
 .gd {
-  background-color: #fcc;
-  border: 1px solid #c00;
+  background-color: #FCC;
+  border: 1px solid #C00;
 }
 
 .ge {
@@ -943,12 +943,12 @@
 }
 
 .gi {
-  background-color: #cfc;
-  border: 1px solid #0c0;
+  background-color: #CFC;
+  border: 1px solid #0C0;
 }
 
 .go {
-  color: #aaa;
+  color: #AAA;
 }
 
 .gp {
@@ -960,7 +960,7 @@
 }
 
 .gt {
-  color: #9c6;
+  color: #9C6;
 }
 
 .kc, .kd, .kn, .kp, .kr {
@@ -972,7 +972,7 @@
 }
 
 .m {
-  color: #f60;
+  color: #F60;
 }
 
 .s {
@@ -988,7 +988,7 @@
 }
 
 .nc {
-  color: #0a8;
+  color: #0A8;
 }
 
 .no {
@@ -996,7 +996,7 @@
 }
 
 .nd {
-  color: #99f;
+  color: #99F;
 }
 
 .ni {
@@ -1004,19 +1004,19 @@
 }
 
 .ne {
-  color: #c00;
+  color: #C00;
 }
 
 .nf {
-  color: #c0f;
+  color: #C0F;
 }
 
 .nl {
-  color: #99f;
+  color: #99F;
 }
 
 .nn {
-  color: #0cf;
+  color: #0CF;
 }
 
 .nt {
@@ -1036,40 +1036,40 @@
 }
 
 .mf, .mh, .mi, .mo {
-  color: #f60;
+  color: #F60;
 }
 
 .sb, .sc {
-  color: #c30;
+  color: #C30;
 }
 
 .sd {
+  color: #C30;
   font-style: italic;
-  color: #c30;
 }
 
 .s2, .se, .sh {
-  color: #c30;
+  color: #C30;
 }
 
 .si {
-  color: #a00;
+  color: #A00;
 }
 
 .sx {
-  color: #c30;
+  color: #C30;
 }
 
 .sr {
-  color: #3aa;
+  color: #3AA;
 }
 
 .s1 {
-  color: #c30;
+  color: #C30;
 }
 
 .ss {
-  color: #fc3;
+  color: #FC3;
 }
 
 .bp {
@@ -1081,7 +1081,7 @@
 }
 
 .il {
-  color: #f60;
+  color: #F60;
 }
 
 .css .nt + .nt {
@@ -1109,8 +1109,8 @@
 :hover > .anchorjs-link {
   opacity: .75;
   -webkit-transition: color .16s linear;
-       -o-transition: color .16s linear;
-          transition: color .16s linear;
+  -o-transition: color .16s linear;
+  transition: color .16s linear;
 }
 
 .anchorjs-link:focus, :hover > .anchorjs-link:hover {

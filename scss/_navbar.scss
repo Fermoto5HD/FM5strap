@@ -5,8 +5,8 @@
 
 .navbar {
   position: relative;
-  padding: $navbar-padding-vertical $navbar-padding-horizontal;
-  background-color: rgb(40, 40, 40); 
+  padding: $navbar-padding-y $navbar-padding-x;
+  background-color: rgb(40, 40, 40);
   @include clearfix;
 
   @include media-breakpoint-up(sm) {
@@ -52,13 +52,13 @@
 
 .navbar-fixed-top {
   background-color: transparent; 
-  @include gradient-vertical(black, transparent, 0%, 100%);
+  @include gradient-y(black, transparent, 0%, 100%);
   top: 0;
 }
 
 .navbar-fixed-bottom {
   background-color: transparent; 
-  @include gradient-vertical(transparent, black, 0%, 100%);
+  @include gradient-y(transparent, black, 0%, 100%);
   bottom: 0;
 }
 
@@ -89,8 +89,8 @@
     position: center;
   }
   float: left;
-  padding-top:    .25rem;
-  padding-bottom: .25rem;
+  padding-top:    $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
   margin-right: 1rem;
   font-size: $font-size-lg;
 
@@ -106,11 +106,11 @@
 
 .navbar-divider {
   float: left;
-  width: 1px;
+  width: $border-width;
   padding-top: .425rem;
   padding-bottom: .425rem;
-  margin-right: $navbar-padding-horizontal;
-  margin-left:  $navbar-padding-horizontal;
+  margin-right: $navbar-padding-x;
+  margin-left:  $navbar-padding-x;
   overflow: hidden;
 
   &::before {
@@ -125,37 +125,18 @@
 // Bootstrap JavaScript plugin.
 
 .navbar-toggler {
-  padding: .5rem .75rem;
+  padding: .75rem 1rem;
   font-size: $font-size-lg;
   line-height: 1;
   background: none;
   border: $border-width solid transparent;
+  color: #FFF; 
   @include border-radius($btn-border-radius);
 
   @include hover-focus {
     text-decoration: none;
   }
 }
-
-// Custom override for
-.navbar-toggleable {
-  &-xs {
-    @include media-breakpoint-up(sm) {
-      display: block !important;
-    }
-  }
-  &-sm {
-    @include media-breakpoint-up(md) {
-      display: block !important;
-    }
-  }
-  &-md {
-    @include media-breakpoint-up(lg) {
-      display: block !important;
-    }
-  }
-}
-
 
 // Navigation
 //
@@ -249,13 +230,57 @@
   }
 }
 
-.jumbotron, .jumbotron-container{
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.5); 
-    @include border-radius($btn-border-radius);
+
+// Navbar toggleable
+//
+// Custom override for collapse plugin in navbar.
+
+// scss-lint:disable ImportantRule
+.navbar-toggleable {
+  &-xs {
+    @include clearfix;
+    @include media-breakpoint-down(xs) {
+      .navbar-nav .nav-item {
+        float: none;
+        margin-left: 0;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      display: block !important;
+    }
+  }
+
+  &-sm {
+    @include clearfix;
+    @include media-breakpoint-down(sm) {
+      .navbar-nav .nav-item {
+        float: none;
+        margin-left: 0;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      display: block !important;
+    }
+  }
+
+  &-md {
+    @include clearfix;
+    @include media-breakpoint-down(md) {
+      .navbar-nav .nav-item {
+        float: none;
+        margin-left: 0;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      display: block !important;
+    }
   }
 }
+// scss-lint:enable ImportantRule
 
+// Nav responsive 
+// 
+// Menu for mobile
 .nav-responsive {
   transition: 0.5s; 
   width: 100%;

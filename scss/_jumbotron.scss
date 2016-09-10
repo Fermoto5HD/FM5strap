@@ -6,6 +6,8 @@
     position: center; 
     size: cover;
   }
+  margin-bottom: 30px; 
+  &.no-margin {margin-bottom: 0}
 }
 .jumbotron {
   padding: $jumbotron-padding ($jumbotron-padding / 2);
@@ -29,6 +31,9 @@
     padding: ($jumbotron-padding * 2) $jumbotron-padding;
   }
   & .alert{opacity: 0.75; &:hover{opacity: 1}}
+  .navbar {
+    background-color: rgba(40, 40, 40, 0.5); 
+  }
 }
 
 .jumbotron-hr {

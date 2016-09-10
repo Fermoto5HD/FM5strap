@@ -28,6 +28,11 @@
       position: relative;
       display: block;
       overflow: hidden; 
+      background: {
+        repeat: no-repeat; 
+        size: cover; 
+        position: center; 
+      }
       i{
         padding-top: 32px; 
         font-size: 48px;

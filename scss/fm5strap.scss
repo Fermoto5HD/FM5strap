@@ -1,13 +1,13 @@
-/*
-	FM5strap v1 (http://Fermoto5HD.16mb.com)
-	Basado en Bootstrap v4.0.0-alpha.2
-	2016 - Armado por Fernando Osorio (Fermoto5HD)
-	Basado en Bootstrap v4.0.0-alpha.2 - Copyright 2011-2016 Twitter, Inc. 
-	Bootstrap está licenciado bajo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-	FM5strap esta licenciado bajo CC-BY-4.0 (https://github.com/Fermoto5HD/FM5strap/LICENSE)
+/*!
+ * FM5strap v1 (http://Fermoto5HD.16mb.com)
+ * 2016 - Armado por Fernando Osorio (Fermoto5HD)
+ * Basado en Bootstrap v4.0.0-alpha.3 - Copyright 2011-2016 Twitter, Inc. 
+ * Bootstrap está licenciado bajo MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * FM5strap esta licenciado bajo CC-BY-4.0 (https://github.com/Fermoto5HD/FM5strap/LICENSE)
 */
 
 // Core variables and mixins
+@import "custom";
 @import "variables";
 @import "mixins";
 
@@ -40,10 +40,9 @@
 @import "card";
 @import "breadcrumb";
 @import "pagination";
-@import "pager";
-@import "shortcuts";
-@import "labels";
+@import "tags";
 @import "jumbotron";
+@import "shortcuts";
 @import "alert";
 @import "progress";
 @import "media";
@@ -59,6 +58,3 @@
 
 // Utility classes
 @import "utilities";
-@import "utilities-background";
-@import "utilities-spacing";
-@import "utilities-responsive";
